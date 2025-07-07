@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <>
       <div class="bg-[#E64E37]">
-        <div class=" max-w-7xl m-auto px-2 py-1 flex justify-between items-center">
+        <div class=" max-w-7xl m-auto  px-4 md:px-12 py-1 flex justify-between items-center">
           <div class="flex gap-5">
             <div class="flex gap-2 items-center">
               <div>
