@@ -7,7 +7,7 @@ export default function OurCompany() {
     return (
         <>
             <div>
-                <div class="max-w-7xl m-auto px-2 flex flex-wrap justify-between items-center py-12 ">
+                <div class="max-w-7xl m-auto px-4 md:px-2 flex flex-wrap justify-between items-center py-12 ">
                     <div class="flex  items-center justify-center md:w-[50%] pt-5">
                         <img src={trusted} alt="" class="w-[72%] flex items-center justify-center" />
                     </div>
