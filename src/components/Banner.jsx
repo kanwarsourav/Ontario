@@ -5,10 +5,9 @@ import '../App.css'
 export default function Banner() {
     return (
         <>
-            <div class="bg-[#002768] bg-cover bg-center h-full w-full"
-            >
+            <div class="bg-[#002768] ">
                 <div class=" bg-cover bg-center h-full w-full   "
-                    style={{ backgroundImage: `url(${bannerBg})` }}>
+                    style={{ backgroundImage: `url(${bannerBg})` }}>    
                         <div class="max-w-7xl m-auto px-2 flex">
                     <div class="flex flex-col  justify-center w-[50%]  gap-4">
                         <h1 class="text-white text-5xl font-bold w-[80%]">Build Your Global Career with a Work Visa</h1>
@@ -18,7 +17,7 @@ export default function Banner() {
                                 Book a Consultation
                             </div>
                         </div>
-                    </div>
+                    </div>  
                     <div>
                         <img src={visa} alt="" />
                     </div>
