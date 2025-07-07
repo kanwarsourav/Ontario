@@ -20,7 +20,7 @@ export default function Header() {
               </div>
             </div>
             <div>
-              <div class="flex gap-2 items-center">
+              <div class=" gap-2 items-center hidden md:flex">
                 <div>
                   <img src={mail} alt="" />
                 </div>
@@ -31,13 +31,13 @@ export default function Header() {
             </div>
           </div>
           <div class="flex gap-4">
-            <div>
+            <div class="cursor-pointer"> 
               <img src={facebook} alt="" />
             </div>
-            <div>
+            <div class="cursor-pointer">
               <img src={instagram} alt="" />
             </div>
-            <div>
+            <div class="cursor-pointer">
               <img src={linkedin} alt="" />
             </div>
             

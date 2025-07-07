@@ -7,21 +7,21 @@ export default function Banner() {
         <>
             <div class="bg-[#002768] ">
                 <div class=" bg-cover bg-center h-full w-full   "
-                    style={{ backgroundImage: `url(${bannerBg})` }}>    
-                        <div class="max-w-7xl m-auto px-2 flex">
-                    <div class="flex flex-col  justify-center w-[50%]  gap-4">
-                        <h1 class="text-white text-5xl font-bold w-[80%]">Build Your Global Career with a Work Visa</h1>
-                        <p class="text-white w-[75%]">Open doors to international opportunities and grow your career without borders. Let us guide your journey to a successful work visa.</p>
-                        <div class="flex">
-                            <div class="flex text-white p-3 px-7 mt-4 rounded-4xl bg-[#E64E37]">
-                                Book a Consultation
+                    style={{ backgroundImage: `url(${bannerBg})` }}>
+                    <div class="max-w-7xl m-auto px-2 flex flex-wrap md:flex-nowrap py-2 md:py-0">
+                        <div class="flex flex-col  justify-center lg:w-[50%]  gap-4">
+                            <h1 class="text-white text-4xl md:text-5xl font-bold md:w-[80%]">Build Your Global Career with a Work Visa</h1>
+                            <p class="text-white md:w-[75%]">Open doors to international opportunities and grow your career without borders. Let us guide your journey to a successful work visa.</p>
+                            <div class="flex">
+                                <div class="flex text-white p-3 px-7 mt-4 rounded-4xl bg-[#E64E37] cursor-pointer">
+                                    Book a Consultation
+                                </div>
                             </div>
                         </div>
-                    </div>  
-                    <div>
-                        <img src={visa} alt="" />
+                        <div class="lg:w-[50%]">
+                            <img src={visa} alt="" />
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </>
