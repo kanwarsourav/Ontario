@@ -18,14 +18,14 @@ const testimonials = [
     role: 'CTO at TechNova',
     image: 'https://randomuser.me/api/portraits/women/65.jpg',
     review:
-      'Excellent support and clear communication throughout the entire process.',
+      'Their team’s expertise and commitment to quality helped us improve efficiency across the board.',
     rating: 5,
   },
   {
     name: 'James Watson',
     role: 'Manager at BuildIt Inc.',
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
-    review: 'The process was smooth, and the team was very professional.',
+    review: 'Their team’s expertise and commitment to quality helped us improve efficiency across the board.',
     rating: 5,
   },
 ];
