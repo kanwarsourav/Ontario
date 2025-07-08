@@ -14,7 +14,7 @@ export default function OurConsultancy() {
                     <div class="flex flex-col gap-3 lg:w-[50%] justify-center items-start">
                         <h5 class="flex text-white gap-1 font-medium"><img src={aeroplane2} alt="" />Our Consultancy</h5>
                         <h2 class="text-[40px] font-bold text-white leading-none">Unparalleled consultancy from experienced lawyer</h2>
-                        <div className="flex p-1 border-1 gap-1.5 mt-4 border-white rounded-4xl justify-between items-center">
+                        <div className="flex p-1 border-1 gap-1.5 mt-4 border-white rounded-4xl justify-center md:justify-between flex-wrap md:flex-nowrap items-center">
                             <div className="flex text-white py-1  px-6 text-sm rounded-4xl font-semibold bg-[#E64E37] cursor-pointer">
                                 Apply Visa Online
                             </div>
