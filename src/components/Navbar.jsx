@@ -12,12 +12,12 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
-        {/* Logo */}
+       
         <div class="cursor-pointer">
           <img src={logo} alt="Logo"  />
         </div>
 
-        {/* Desktop Menu */}
+       
         <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium">
           <li class="cursor-pointer">Home</li>
           <li class="cursor-pointer">About Us</li>
@@ -28,7 +28,7 @@ export default function Navbar() {
           <li class="cursor-pointer">Our Team</li>
         </ul>
 
-        {/* Call Info - Desktop */}
+       
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
           <img src={call} alt="Call"  />
           <div>
@@ -37,7 +37,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Hamburger Icon - Mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             <img src={isOpen ? closeIcon : menuIcon} alt="Menu" className="w-6" />
@@ -45,7 +44,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+     
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 shadow">
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">

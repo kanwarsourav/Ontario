@@ -6,14 +6,13 @@ export default function WorkVisa() {
   return (
     <div className="max-w-7xl mx-auto px-4 relative flex items-center justify-center overflow-hidden py-8 sm:py-12">
       
-      {/* Fixed Center Image */}
+   
       <img
         src={centerImg}
         alt="Center"
         className="relative w-[90%] max-w-4xl z-10"
       />
 
-      {/* Floating Cloud Behind */}
       <motion.img
         src={cloud}
         alt="Cloud"

@@ -9,8 +9,9 @@ export default function OurCompany() {
             <div>
                 <div class="max-w-7xl m-auto px-4 md:px-2 flex flex-wrap justify-between items-center py-12 ">
                     <div class="flex  items-center justify-center md:w-[50%] pt-5">
-                        <img src={trusted} alt="" class="w-[72%] flex items-center justify-center" />
+                        <img src={trusted} alt="" class="w-[75%] flex items-center justify-center" />
                     </div>
+                    
                     <div class="flex flex-col gap-3 justify-center items-start md:w-[45%] mt-2 md:mt-0">
                         <h5 class="flex text-[#E64E37] font-medium gap-1"><div>
                             <img src={aeroplane} alt="" />

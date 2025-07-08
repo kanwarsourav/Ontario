@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import OurCompany from './components/OurCompany'
 import WorkVisa from './components/WorkVisa'
+import HelpClient from './components/HelpClient'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Banner/>
       <OurCompany/>
       <WorkVisa/>
+      <HelpClient/>
     </>
   )
 }

@@ -18,6 +18,7 @@ export default function Banner() {
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="lg:w-[50%]">
                             <img src={visa} alt="" />
                         </div>

@@ -30,6 +30,7 @@ export default function Header() {
               </div>
             </div>
           </div>
+          
           <div class="flex gap-4">
             <div class="cursor-pointer"> 
               <img src={facebook} alt="" />
