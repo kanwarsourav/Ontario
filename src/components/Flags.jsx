@@ -14,7 +14,7 @@ export default function Flags() {
                             <img src={aeroplane} alt="Aeroplane" />
                             <h4 className="text-[#E64E37] text-lg font-medium">Countries We Offer Support</h4>
                         </div>
-                        <h2 class="text-[40px] font-bold text-[#002768] leading-none">Work Visa Services Following Countries</h2>
+                        <h2 class="text-[40px] font-bold text-center text-[#002768] leading-none">Work Visa Services Following Countries</h2>
                     </div>
 
                     <div class="flex flex-col gap-4 mt-10">
