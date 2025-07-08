@@ -9,8 +9,11 @@ import HelpClient from './components/HelpClient'
 import OurConsultancy from './components/OurConsultancy'
 import Flags from './components/Flags'
 import Testimonial from './components/Testimonial'
+import WhyChooseUs from './components/WhyChooseUs'
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
 
@@ -26,6 +29,7 @@ function App() {
       <OurConsultancy/>
       <Flags/>
       <Testimonial/>
+      <WhyChooseUs/>
     </>
   )
 }
