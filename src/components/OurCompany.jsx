@@ -16,7 +16,7 @@ export default function OurCompany() {
                         <div
                             className="absolute 
         top-[10%] right-[8%] sm:top-[15%] sm:right-[14%]
-        md:top-[20%] md:right-[18%] lg:top-[17%] lg:right-[18%]
+        md:top-[20%] md:right-[18%] lg:top-[17%] lg:right-[15%]
         bg-[#002768] text-white rounded-full 
         w-24 h-24 md:w-28 md:h-28 
         flex flex-col items-center justify-center 
