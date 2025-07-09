@@ -11,10 +11,11 @@ import Flags from './components/Flags'
 import Testimonial from './components/Testimonial'
 import WhyChooseUs from './components/WhyChooseUs'
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 import Detail from './components/Detail'
-import Enquiry from './components/enquiry'
+import Enquiry from './components/Enquiry'
+
 
 
 function App() {
