@@ -33,19 +33,19 @@ export default function CountryList() {
             <div className="flex flex-col gap-6">
                 {/* Row 1 */}
                 <div className="flex justify-evenly flex-wrap gap-6">
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105 ">
                         <img src={canada} alt="Canada" className="w-7  object-contain" />
                         <span className="text-[#002768] font-medium">Canada</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={belgium} alt="Belgium" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Belgium</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={denmark} alt="Denmark" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Denmark</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={australia} alt="Australia" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Australia</span>
                     </div>
@@ -53,19 +53,19 @@ export default function CountryList() {
 
                 {/* Row 2 */}
                 <div className="flex justify-evenly flex-wrap gap-6">
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={france} alt="France" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">France</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={germany} alt="Germany" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Germany</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={greece} alt="Greece" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Greece</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={hungary} alt="Hungary" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Hungary</span>
                     </div>
@@ -73,19 +73,19 @@ export default function CountryList() {
 
                 {/* Row 3 */}
                 <div className="flex justify-evenly flex-wrap gap-6">
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={iceland} alt="Iceland" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Iceland</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={ireland} alt="Ireland" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Ireland</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={italy} alt="Italy" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Italy</span>
                     </div>
-                    <div className="flex items-center gap-2 min-w-[120px]">
+                    <div className="flex items-center gap-2 min-w-[120px] transform transition-transform duration-300 hover:scale-105">
                         <img src={luxembourg} alt="Luxembourg" className="w-7 object-contain" />
                         <span className="text-[#002768] font-medium">Luxembourg</span>
                     </div>

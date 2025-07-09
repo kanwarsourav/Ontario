@@ -9,7 +9,7 @@ export default function Detail() {
                 {/* Clients */}
                 <div>
                     <h2 className="text-[#E64E37] text-3xl font-bold">
-                        <CountUp end={23000} suffix="K" duration={5} />
+                        <CountUp end={23000} suffix="" duration={5} />
                     </h2>
                     <p className="text-sm font-medium text-[#002768] mt-1">We Have Worked With Clients</p>
                 </div>
