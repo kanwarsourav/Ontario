@@ -30,7 +30,7 @@ export default function Navbar() {
 
        
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
-          <img src={call} alt="Call"  />
+          <img src={call} alt="Call" className='transform transition-transform duration-300 hover:scale-120 cursor-pointer' />
           <div>
             <h5 className="text-sm">Call Us Now</h5>
             <h5 className="font-semibold">+91 8699964265</h5>
@@ -54,7 +54,7 @@ export default function Navbar() {
             <li class="cursor-pointer">Blog</li>
             <li class="cursor-pointer">Our Team</li>
             <li className="flex items-center gap-2 pt-2 border-t mt-2 ">
-              <img src={call} alt="Call"  />
+              <img src={call} alt="Call" className='transform transition-transform duration-300 hover:scale-105' />
               <div>
                 <h5 className="text-sm">Call Us Now</h5>
                 <h5 className="font-semibold text-sm">+91 8699964265</h5>

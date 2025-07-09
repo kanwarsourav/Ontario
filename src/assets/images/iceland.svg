@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.5" height="31.5" viewBox="0 0 31.5 31.5">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_136" data-name="Ellipse 136" cx="15.5" cy="15.5" r="15.5" fill="none" stroke="#000" stroke-width="0.5"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_711" data-name="Rectangle 711" width="53.725" height="31.34" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Iceland" transform="translate(-413.098 -1072.584)">
+    <g id="Group_1933" data-name="Group 1933" transform="translate(413.348 1072.834)" clip-path="url(#clip-path)">
+      <g id="Group_1932" data-name="Group 1932" transform="translate(-7.259 -0.169)">
+        <g id="Group_1931" data-name="Group 1931">
+          <g id="Group_1930" data-name="Group 1930" clip-path="url(#clip-path-2)">
+            <rect id="Rectangle_706" data-name="Rectangle 706" width="53.725" height="31.34" fill="#223693"/>
+            <rect id="Rectangle_707" data-name="Rectangle 707" width="6.965" height="31.34" transform="translate(12.188)" fill="#fff"/>
+            <rect id="Rectangle_708" data-name="Rectangle 708" width="53.725" height="6.963" transform="translate(0 12.19)" fill="#fff"/>
+            <rect id="Rectangle_709" data-name="Rectangle 709" width="3.481" height="31.34" transform="translate(13.929)" fill="#d72828"/>
+            <rect id="Rectangle_710" data-name="Rectangle 710" width="53.725" height="3.481" transform="translate(0 13.931)" fill="#d72828"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <circle id="Ellipse_137" data-name="Ellipse 137" cx="15.5" cy="15.5" r="15.5" transform="translate(413.348 1072.834)" fill="none" stroke="#8e8e8e" stroke-width="0.5"/>
+  </g>
+</svg>

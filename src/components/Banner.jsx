@@ -13,7 +13,7 @@ export default function Banner() {
                             <h1 class="text-white text-4xl md:text-5xl font-bold md:w-[80%]">Build Your Global Career with a Work Visa</h1>
                             <p class="text-white md:w-[75%]">Open doors to international opportunities and grow your career without borders. Let us guide your journey to a successful work visa.</p>
                             <div class="flex">
-                                <div class="flex text-white p-3 px-7 mt-4 rounded-4xl bg-[#E64E37] cursor-pointer">
+                                <div class="flex text-white p-3 px-7 mt-4 rounded-4xl bg-[#E64E37] cursor-pointer transform transition-transform duration-300 hover:scale-105">
                                     Book a Consultation
                                 </div>
                             </div>
