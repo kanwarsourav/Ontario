@@ -13,6 +13,7 @@ import WhyChooseUs from './components/WhyChooseUs'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Detail from './components/Detail'
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <Flags/>
       <Testimonial/>
       <WhyChooseUs/>
+      <Detail/>
     </>
   )
 }
