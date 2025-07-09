@@ -20,7 +20,7 @@ export default function OurCompany() {
                         <h2 class="text-[40px] font-bold text-[#002768] md:w-[80%] leading-none">Not Just Visas We Build International Careers</h2>
                         <p class="md:w-[70%] text-[#002768]">We don’t just help you get a visa — we guide you toward the right job, the right country, and the right future.</p>
                         <ul class="flex flex-col mt-3">
-                            <div class="flex flex-wrap md:gap-4 text-[#002768]">
+                            <div class="flex flex-wrap gap-2 md:gap-4 text-[#002768]">
                                 <li class="flex gap-2 items-center"><div>
                                     <img src={list} alt="" />
                                 </div>Personalized Career Guidance</li>
