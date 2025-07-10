@@ -14,7 +14,10 @@ import WhyChooseUs from './components/WhyChooseUs'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Detail from './components/Detail'
-import Enquiry from './components/Enquiry'
+import Enquirys from './components/Enquirys'
+import Blogs from './components/Blogs'
+import Water from './components/Water'
+import Footer from './components/Footer'
 
 
 
@@ -34,7 +37,10 @@ function App() {
       <Testimonial/>
       <WhyChooseUs/>
       <Detail/>
-      <Enquiry/>
+      <Enquirys/>
+      <Blogs/>
+      <Water/>
+      <Footer/>
     </>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import aeroplane from '../assets/images/aeroplane.svg';
 import calling from '../assets/images/calling.svg';
 
-export default function Enquiry() {
+export default function Enquirys() {
     return (
         <>
             <div className='bg-[#FFFAF9]'>
@@ -18,7 +18,7 @@ export default function Enquiry() {
                         <div class="flex">
                             <div class="flex text-white py-1 px-10 mt-4 rounded-4xl bg-[#E64E37] cursor-pointer transform transition-transform duration-300 hover:scale-105">
                                 Let's Talk
-                            </div>  
+                            </div>
                         </div>
                         <div><img src={calling} alt="" className='w-[70%] lg:w-[90%] mt-4' /></div>
                     </div>
@@ -28,20 +28,24 @@ export default function Enquiry() {
                             <div className='flex flex-col gap-3'>
                                 <input type="text" placeholder="Enter Name" class="px-4 py-2 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]   text-start">
                                 </input>
-                                
+
                                 <div className='flex gap-4'>
                                     <input type="email" placeholder="Your Email" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  text-start">
                                     </input>
                                     <input type="number" placeholder="Phone Number" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  text-start">
                                     </input>
                                 </div>
-                                <input type="text-area" placeholder="Write Message..." class="px-4 pb-24 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  flex justify-start ">
-                                </input>
-                                 <div class="flex justify-center items-center ">
-                            <div class="flex justify-center items-center text-white py-1 px-10 mt-2 rounded-4xl bg-[#002768] cursor-pointer transform transition-transform duration-300 hover:scale-105">
-                               Send Message
-                            </div>
-                        </div>
+                                <textarea
+                                    rows={4}
+                                    placeholder="Write Message..."
+                                    className="px-4 pb-18 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  flex justify-start "
+                                />
+
+                                <div class="flex justify-center items-center ">
+                                    <div class="flex justify-center items-center text-white py-1 px-10 mt-2 rounded-4xl bg-[#002768] cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                                        Send Message
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
