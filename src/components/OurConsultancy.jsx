@@ -48,17 +48,17 @@ export default function OurConsultancy() {
 
                     {/* Toggleable Descriptions */}
                     {openSection === 'visa' && (
-                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[90%]">
+                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
                             Start your visa application online with a simple and secure form. Upload your documents and get real-time updates.
                         </p>
                     )}
                     {openSection === 'info' && (
-                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[90%]">
+                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
                             Get all the latest updates about visa policies, travel restrictions, and government advisories.
                         </p>
                     )}
                     {openSection === 'resources' && (
-                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[90%]">
+                        <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
                             Access comprehensive immigration guides, document checklists, and country-specific visa requirements.
                         </p>
                     )}
