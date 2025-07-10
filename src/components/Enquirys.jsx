@@ -26,19 +26,19 @@ export default function Enquirys() {
                         <div className='bg-white p-8 rounded-2xl shadow-lg '>
                             <h3 className='text-[26px] sm:text-[35px] font-bold text-[#002768] pb-2'>Get free assessment today!</h3>
                             <div className='flex flex-col gap-3'>
-                                <input type="text" placeholder="Enter Name" class="px-4 py-2 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]   text-start">
+                                <input type="text" placeholder="Enter Name" class="px-4 py-2 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#002768]   text-start">
                                 </input>
 
                                 <div className='flex gap-4'>
-                                    <input type="email" placeholder="Your Email" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  text-start">
+                                    <input type="email" placeholder="Your Email" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#002768]  text-start">
                                     </input>
-                                    <input type="number" placeholder="Phone Number" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  text-start">
+                                    <input type="number" placeholder="Phone Number" class="px-4 py-2 w-full sm:w-44 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#002768]  text-start">
                                     </input>
                                 </div>
-                                <textarea
+                                <textarea   
                                     rows={4}
                                     placeholder="Write Message..."
-                                    className="px-4 pb-18 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#E64E37]  flex justify-start "
+                                    className="px-4 pb-18 w-full sm:w-92 rounded-2xl  border-2  border-[#FBDFDB] bg-[#FFF5F3] text-[#002768]  flex justify-start "
                                 />
 
                                 <div class="flex justify-center items-center ">

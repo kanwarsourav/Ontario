@@ -80,7 +80,7 @@ export default function OurConsultancy() {
                 {/* Right Section */}
                 <div className="flex flex-col gap-6 lg:w-[50%] justify-center items-center">
                     <img src={signing} alt="" className="rounded-2xl" />
-                    <div className="flex gap-6 justify-between items-center">
+                    <div className="flex gap-6 flex-wrap md:flex-nowrap justify-center md:justify-between items-center">
                         <img src={givingvisa} alt="" className="rounded-2xl" />
                         <img src={flyaero} alt="" className="rounded-2xl" />
                     </div>
