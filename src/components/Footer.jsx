@@ -11,7 +11,7 @@ export default function Footer() {
         <>
             <div class=" bg-cover bg-center h-full w-full  bg-[#002768] "
                 style={{ backgroundImage: `url(${footerbg})` }}>
-                <div className='max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap   flex justify-between'>
+                <div className='max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap  gap-2 lg:gap-0 flex justify-between'>
                     <div className='flex flex-col gap-6 lg:w-[24%]'>
                         <div>
                             <img src={logo} alt="" />
