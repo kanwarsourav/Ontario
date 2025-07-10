@@ -28,19 +28,21 @@ export default function OurConsultancy() {
                     </h2>
 
                     {/* Toggle Buttons */}
-                    <div className="flex p-1 border gap-1.5 mt-4 border-white rounded-4xl justify-center md:justify-between flex-wrap md:flex-nowrap items-center">
+                    <div className="flex p-1  gap-1.5 mt-4 md:border md:border-white  rounded-4xl justify-center md:justify-between flex-col sm:flex-row   mx-5 sm:mx-0      md:flex-nowrap  ">
+                        <div className='flex'>
                         <div
-                            className="flex text-white py-1 px-6 text-sm rounded-4xl font-semibold bg-[#E64E37] cursor-pointer"
+                            className="flex text-white py-1 px-6 text-sm rounded-4xl font-semibold bg-[#E64E37] cursor-pointer justify-start items-start sm:mx-0"
                             onClick={() => toggleSection('visa')}>
                             Apply Visa Online
                         </div>
+                        </div>
                         <div
-                            className="flex text-[#002768] py-1 px-6 text-sm rounded-4xl font-semibold bg-white cursor-pointer"
+                            className="flex text-[#002768] py-1 px-6 text-sm rounded-4xl font-semibold bg-white cursor-pointer justify-start items-start sm:mx-0"
                             onClick={() => toggleSection('info')}>
                             Important Information
                         </div>
                         <div
-                            className="flex text-[#002768] py-1 px-6 text-sm rounded-4xl font-semibold bg-white cursor-pointer"
+                            className="flex text-[#002768] py-1 px-6 text-sm rounded-4xl font-semibold bg-white cursor-pointer justify-start items-start sm:mx-0"
                             onClick={() => toggleSection('resources')}>
                             Immigration Resources
                         </div>

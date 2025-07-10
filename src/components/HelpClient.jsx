@@ -20,8 +20,8 @@ export default function HelpClient() {
                         </h2>
                     </div>
 
-                    <div className="flex flex-wrap justify-center lg:justify-between gap-y-6 pb-6">
-                        <div className="lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
+                    <div className="flex flex-wrap justify-center  lg:justify-between gap-y-6 pb-6 mx-14 md:mx-0  mt-4  ">
+                        <div className=" lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
                             <div className="w-8 mb-2">
                                 <img src={laptop} alt="Laptop Working" />
                             </div>

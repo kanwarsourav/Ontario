@@ -16,7 +16,7 @@ export default function OurCompany() {
           <img src={trusted} alt="Trusted" className="w-[60%] md:w-[75%] rounded-xl" />
 
           {/* Overlapping Image (Bottom Right) */}
-          <div className="absolute bottom-[-20px] right-[10px] md:bottom-[-30px] md:right-[10px] w-52 h-36 md:w-80 md:h-64 bg-white rounded-xl overflow-hidden border-4 border-white shadow-xl z-10">
+          <div className="absolute bottom-[-20px] right-[10px] md:bottom-[-30px] md:right-[10px] w-52 h-36 md:w-80 md:h-64 bg-white rounded-4xl overflow-hidden border-4 border-white shadow-xl z-10">
             <img
               src={grouppeople}
               alt="People"
@@ -35,7 +35,7 @@ export default function OurCompany() {
               text-center text-xs md:text-sm 
               border-4 border-white z-20 shadow-xl"
           >
-            <img src={threeperson} alt="badge" className="w-5 md:w-7 mb-1" />
+            <img src={threeperson} alt="badge" className="w-5 md:w-7 mb-1 " />
             <span className="text-base md:text-2xl font-bold leading-none">1000+</span>
             <span className="text-xs leading-tight">Trusted Customer</span>
           </div>
