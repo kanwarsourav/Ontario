@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logo from '../assets/images/logo.svg';
 import arrow from '../assets/images/arrowdown.svg';
 import call from '../assets/images/call.svg';
@@ -11,6 +11,9 @@ export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null); // desktop dropdown
   const [mobileDropdown, setMobileDropdown] = useState(null); // mobile dropdown
 
+  const dropdownRef = useRef(null);
+  const mobileDropdownRef = useRef(null);
+
   const toggleDropdown = (menuName) => {
     setOpenDropdown(prev => (prev === menuName ? null : menuName));
   };
@@ -19,20 +22,46 @@ export default function Navbar() {
     setMobileDropdown(prev => (prev === menuName ? null : menuName));
   };
 
+  // Detect clicks outside for desktop dropdowns
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Detect clicks outside for mobile dropdowns
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileDropdownRef.current &&
+        !mobileDropdownRef.current.contains(event.target)
+      ) {
+        setMobileDropdown(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
-        
         {/* Logo */}
         <div className="cursor-pointer">
           <img src={logo} alt="Logo" />
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative">
+        <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative" ref={dropdownRef}>
           <li className="cursor-pointer">Home</li>
 
-          {/* About Us Dropdown */}
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("company")}>
             <div className="flex items-center gap-1">
               About Us
@@ -47,7 +76,6 @@ export default function Navbar() {
             )}
           </li>
 
-          {/* Our Services Dropdown */}
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("visas")}>
             <div className="flex items-center gap-1">
               Our Services
@@ -63,7 +91,6 @@ export default function Navbar() {
             )}
           </li>
 
-          {/* Blog Dropdown */}
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("resources")}>
             <div className="flex items-center gap-1">
               Blog
@@ -83,11 +110,7 @@ export default function Navbar() {
 
         {/* Desktop Call Section */}
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
-          <img
-            src={call}
-            alt="Call"
-            className="transform transition-transform duration-300 hover:scale-110 cursor-pointer"
-          />
+          <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-110 cursor-pointer" />
           <div>
             <h5 className="text-sm">Call Us Now</h5>
             <h5 className="font-semibold">+91 8699964265</h5>
@@ -97,22 +120,17 @@ export default function Navbar() {
         {/* Mobile Hamburger Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
-            <img
-              src={isOpen ? closeIcon : menuIcon}
-              alt="Menu"
-              className="w-6"
-            />
+            <img src={isOpen ? closeIcon : menuIcon} alt="Menu" className="w-6" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 shadow">
+        <div className="md:hidden bg-white px-4 pb-4 shadow" ref={mobileDropdownRef}>
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
             <li>Home</li>
 
-            {/* Mobile About Us Dropdown */}
             <li onClick={() => toggleMobileDropdown("company")} className="flex items-center gap-2">
               <span>About Us</span>
               <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "company" ? "rotate-180" : ""}`} />
@@ -125,7 +143,6 @@ export default function Navbar() {
               </ul>
             )}
 
-            {/* Mobile Our Services Dropdown */}
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
               <span>Our Services</span>
               <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "visas" ? "rotate-180" : ""}`} />
@@ -139,7 +156,6 @@ export default function Navbar() {
               </ul>
             )}
 
-            {/* Mobile Blog Dropdown */}
             <li onClick={() => toggleMobileDropdown("resources")} className="flex items-center gap-2">
               <span>Blog</span>
               <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "resources" ? "rotate-180" : ""}`} />
@@ -154,13 +170,8 @@ export default function Navbar() {
 
             <li>Our Team</li>
 
-            {/* Mobile Call */}
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
-              <img
-                src={call}
-                alt="Call"
-                className="transform transition-transform duration-300 hover:scale-105"
-              />
+              <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-105" />
               <div>
                 <h5 className="text-sm">Call Us Now</h5>
                 <h5 className="font-semibold text-sm">+91 8699964265</h5>
