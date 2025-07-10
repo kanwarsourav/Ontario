@@ -7,54 +7,160 @@ import closeIcon from '../assets/images/close.svg';
 import '../App.css';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // mobile menu
+  const [openDropdown, setOpenDropdown] = useState(null); // desktop dropdown
+  const [mobileDropdown, setMobileDropdown] = useState(null); // mobile dropdown
+
+  const toggleDropdown = (menuName) => {
+    setOpenDropdown(prev => (prev === menuName ? null : menuName));
+  };
+
+  const toggleMobileDropdown = (menuName) => {
+    setMobileDropdown(prev => (prev === menuName ? null : menuName));
+  };
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
-       
-        <div class="cursor-pointer">
-          <img src={logo} alt="Logo"  />
+        
+        {/* Logo */}
+        <div className="cursor-pointer">
+          <img src={logo} alt="Logo" />
         </div>
 
-       
-        <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium">
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">About Us</li>
-          <li className="flex items-center gap-1 cursor-pointer">
-            Our Services <img src={arrow} alt="" />
+        {/* Desktop Navigation */}
+        <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative">
+          <li className="cursor-pointer">Home</li>
+
+          {/* About Us Dropdown */}
+          <li className="relative cursor-pointer" onClick={() => toggleDropdown("company")}>
+            <div className="flex items-center gap-1">
+              About Us
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "company" ? "rotate-180" : ""}`} />
+            </div>
+            {openDropdown === "company" && (
+              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Company</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Our Team</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Careers</li>
+              </ul>
+            )}
           </li>
-          <li class="cursor-pointer">Blog</li>
-          <li class="cursor-pointer">Our Team</li>
+
+          {/* Our Services Dropdown */}
+          <li className="relative cursor-pointer" onClick={() => toggleDropdown("visas")}>
+            <div className="flex items-center gap-1">
+              Our Services
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "visas" ? "rotate-180" : ""}`} />
+            </div>
+            {openDropdown === "visas" && (
+              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Work Visa</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tourist Visa</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Student Visa</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Business Visa</li>
+              </ul>
+            )}
+          </li>
+
+          {/* Blog Dropdown */}
+          <li className="relative cursor-pointer" onClick={() => toggleDropdown("resources")}>
+            <div className="flex items-center gap-1">
+              Blog
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "resources" ? "rotate-180" : ""}`} />
+            </div>
+            {openDropdown === "resources" && (
+              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Resources</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">FAQs</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Guides</li>
+              </ul>
+            )}
+          </li>
+
+          <li className="cursor-pointer">Our Team</li>
         </ul>
 
-       
+        {/* Desktop Call Section */}
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
-          <img src={call} alt="Call" className='transform transition-transform duration-300 hover:scale-120 cursor-pointer' />
+          <img
+            src={call}
+            alt="Call"
+            className="transform transition-transform duration-300 hover:scale-110 cursor-pointer"
+          />
           <div>
             <h5 className="text-sm">Call Us Now</h5>
             <h5 className="font-semibold">+91 8699964265</h5>
           </div>
         </div>
 
+        {/* Mobile Hamburger Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
-            <img src={isOpen ? closeIcon : menuIcon} alt="Menu" className="w-6" />
+            <img
+              src={isOpen ? closeIcon : menuIcon}
+              alt="Menu"
+              className="w-6"
+            />
           </button>
         </div>
       </div>
 
-     
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 shadow">
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">About Us</li>
-            <li className="flex items-center gap-1">Our Services <img src={arrow} alt="" /></li>
-            <li class="cursor-pointer">Blog</li>
-            <li class="cursor-pointer">Our Team</li>
-            <li className="flex items-center gap-2 pt-2 border-t mt-2 ">
-              <img src={call} alt="Call" className='transform transition-transform duration-300 hover:scale-105' />
+            <li>Home</li>
+
+            {/* Mobile About Us Dropdown */}
+            <li onClick={() => toggleMobileDropdown("company")} className="flex items-center gap-2">
+              <span>About Us</span>
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "company" ? "rotate-180" : ""}`} />
+            </li>
+            {mobileDropdown === "company" && (
+              <ul className="ml-4 space-y-2 text-sm">
+                <li>Company</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+              </ul>
+            )}
+
+            {/* Mobile Our Services Dropdown */}
+            <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
+              <span>Our Services</span>
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "visas" ? "rotate-180" : ""}`} />
+            </li>
+            {mobileDropdown === "visas" && (
+              <ul className="ml-4 space-y-2 text-sm">
+                <li>Work Visa</li>
+                <li>Tourist Visa</li>
+                <li>Student Visa</li>
+                <li>Business Visa</li>
+              </ul>
+            )}
+
+            {/* Mobile Blog Dropdown */}
+            <li onClick={() => toggleMobileDropdown("resources")} className="flex items-center gap-2">
+              <span>Blog</span>
+              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "resources" ? "rotate-180" : ""}`} />
+            </li>
+            {mobileDropdown === "resources" && (
+              <ul className="ml-4 space-y-2 text-sm">
+                <li>Resources</li>
+                <li>FAQs</li>
+                <li>Guides</li>
+              </ul>
+            )}
+
+            <li>Our Team</li>
+
+            {/* Mobile Call */}
+            <li className="flex items-center gap-2 pt-2 border-t mt-2">
+              <img
+                src={call}
+                alt="Call"
+                className="transform transition-transform duration-300 hover:scale-105"
+              />
               <div>
                 <h5 className="text-sm">Call Us Now</h5>
                 <h5 className="font-semibold text-sm">+91 8699964265</h5>
