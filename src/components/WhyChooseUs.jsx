@@ -12,7 +12,7 @@ import support from '../assets/images/support.svg';
 
 export default function WhyChooseUs() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 py-10">
             <div className="flex flex-wrap gap-12 justify-center md:justify-between items-center">
 
                 {/* LEFT: Rating Card */}
@@ -21,16 +21,17 @@ export default function WhyChooseUs() {
                         className="relative rounded-2xl overflow-hidden shadow-lg pt-8 pb-20 px-6 text-white flex flex-col items-start bg-cover bg-center w-full max-w-[400px] min-h-[480px]"
                         style={{ backgroundImage: `url(${consultbg})` }}
                     >
+                        <div className='flex flex-col justify-center items-center'>
                         {/* Tag */}
                         <span className="bg-white text-[#002768] font-semibold text-sm px-4 py-1 rounded-full mb-4">
                             Creating Great Opportunities
                         </span>
 
                         {/* Title */}
-                        <h3 className="text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px] font-bold leading-snug w-[90%] mb-32">
+                        <h3 className="text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px] font-bold text-center leading-snug w-[90%] mb-32">
                             We help Making your dream into Reality
                         </h3>
-
+</div>
                         {/* Rating + Avatars */}
                         <div className="flex items-center gap-4 mb-4">
                             <div className="text-[30px] sm:text-[36px] lg:text-[40px] font-bold text-white">4.6</div>
@@ -70,7 +71,7 @@ export default function WhyChooseUs() {
                     <img
                         src={girl}
                         alt="girl"
-                        className="absolute bottom-[-4px] sm:bottom-[-7px] right-[-55px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[200px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
+                        className="absolute bottom-[-4px] sm:bottom-[-4px] right-[-55px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[200px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
                     />
                 </div>
 
