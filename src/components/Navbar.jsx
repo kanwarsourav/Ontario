@@ -53,20 +53,33 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
+    if (!isVisible) return;
+
     const handleClickOutside = (event) => {
-      if (
-        mobileDropdownRef.current &&
-        !mobileDropdownRef.current.contains(event.target) &&
-        toggleButtonRef.current &&
-        !toggleButtonRef.current.contains(event.target)
-      ) {
+      const clickedOutsideMenu =
+        mobileDropdownRef.current && !mobileDropdownRef.current.contains(event.target);
+      const clickedOutsideToggle =
+        toggleButtonRef.current && !toggleButtonRef.current.contains(event.target);
+
+      if (clickedOutsideMenu && clickedOutsideToggle) {
         setMobileDropdown(null);
         handleHamburgerClick(); // animate close
       }
     };
+
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isVisible]);
+
+  // Optional: Prevent Body Scroll on Mobile Menu Open
+  useEffect(() => {
+    document.body.style.overflow = isVisible ? 'hidden' : 'auto';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isVisible]);
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
