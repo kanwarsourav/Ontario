@@ -50,7 +50,7 @@ export default function TestimonialCarousel() {
 
   return (
     <div className="w-full bg-white py-12">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-2 md:px-8">
         {/* Section Heading */}
         <div className=" flex flex-col justify-center items-center text-center mb-5">
           <h4 className="flex gap-1 text-[#E64E37] text-lg font-medium"> <div>
