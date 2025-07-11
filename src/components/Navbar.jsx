@@ -7,9 +7,12 @@ import closeIcon from '../assets/images/close.svg';
 import '../App.css';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // mobile menu
-  const [openDropdown, setOpenDropdown] = useState(null); // desktop dropdown
-  const [mobileDropdown, setMobileDropdown] = useState(null); // mobile dropdown
+  const [isOpen, setIsOpen] = useState(false);         // animation trigger
+  const [isVisible, setIsVisible] = useState(false);   // actual presence in DOM
+  const [isClosing, setIsClosing] = useState(false);   // handle exit animation
+
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [mobileDropdown, setMobileDropdown] = useState(null);
 
   const dropdownRef = useRef(null);
   const mobileDropdownRef = useRef(null);
@@ -23,13 +26,25 @@ export default function Navbar() {
     setMobileDropdown(prev => (prev === menuName ? null : menuName));
   };
 
-  // Detect clicks outside for desktop dropdowns
+  const handleHamburgerClick = () => {
+    if (isVisible) {
+      // closing
+      setIsClosing(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setIsVisible(false);
+        setIsClosing(false);
+      }, 400); // match animation duration
+    } else {
+      // opening
+      setIsVisible(true);
+      setIsOpen(true);
+    }
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
     };
@@ -37,7 +52,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Detect clicks outside for mobile dropdown and close hamburger menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -47,7 +61,7 @@ export default function Navbar() {
         !toggleButtonRef.current.contains(event.target)
       ) {
         setMobileDropdown(null);
-        setIsOpen(false);
+        handleHamburgerClick(); // animate close
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
@@ -57,7 +71,6 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
-        {/* Logo */}
         <div className="cursor-pointer">
           <img src={logo} alt="Logo" />
         </div>
@@ -65,7 +78,6 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative" ref={dropdownRef}>
           <li className="cursor-pointer">Home</li>
-
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("company")}>
             <div className="flex items-center gap-1">
               About Us
@@ -112,7 +124,7 @@ export default function Navbar() {
           <li className="cursor-pointer">Our Team</li>
         </ul>
 
-        {/* Desktop Call Section */}
+        {/* Call Section */}
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
           <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-110 cursor-pointer" />
           <div>
@@ -121,23 +133,23 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Hamburger */}
         <div className="md:hidden" ref={toggleButtonRef}>
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <img
-              src={isOpen ? closeIcon : menuIcon}
-              alt="Menu"
-              className="w-6"
-            />
+          <button onClick={handleHamburgerClick}>
+            <img src={isVisible ? closeIcon : menuIcon} alt="Menu" className="w-6" />
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 shadow" ref={mobileDropdownRef}>
+      {isVisible && (
+        <div
+          ref={mobileDropdownRef}
+          className={`md:hidden absolute top-full left-0 w-full bg-white px-4 pb-4 shadow z-40 
+            ${isClosing ? 'animate-fadeOutDiagonal' : 'animate-fadeInDiagonal'}`}
+        >
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <li onClick={() => setIsOpen(false)}>Home</li>
+            <li onClick={handleHamburgerClick}>Home</li>
 
             <li onClick={() => toggleMobileDropdown("company")} className="flex items-center gap-2">
               <span>About Us</span>
@@ -176,7 +188,7 @@ export default function Navbar() {
               </ul>
             )}
 
-            <li onClick={() => setIsOpen(false)}>Our Team</li>
+            <li onClick={handleHamburgerClick}>Our Team</li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
               <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-105" />
