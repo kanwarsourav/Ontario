@@ -35,7 +35,7 @@ export default function OurConsultancy() {
             <div className="flex">
               <button
                 onClick={() => toggleSection('visa')}
-                className={`flex py-1 px-6 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center sm:mx-0 transition-colors duration-200
+                className={`flex py-1 px-10 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center sm:mx-0 transition-colors duration-200
                   ${openSection === 'visa' ? 'bg-[#E64E37] text-white' : 'bg-white text-[#002768]'}`}
               >
                 Apply Visa Online
@@ -95,7 +95,7 @@ export default function OurConsultancy() {
         {/* Right Section */}
         <div className="flex flex-col gap-6 lg:w-[50%] justify-center items-center">
           <img src={signing} alt="" className="rounded-2xl" />
-          <div className="flex gap-6 flex-wrap md:flex-nowrap justify-center md:justify-between items-center">
+          <div className="hidden gap-6  md:flex justify-center md:justify-between items-center">
             <img src={givingvisa} alt="" className="rounded-2xl" />
             <img src={flyaero} alt="" className="rounded-2xl" />
           </div>

@@ -14,13 +14,13 @@ export default function Enquirys() {
                         </h5>
                         <h2 class="text-[40px] font-bold text-[#002768] md:w-[70%] leading-none">Feel free to enquire about
                             any question you got</h2>
-                        <p className='w-[85%]'>Our team is here to assist with any inquiries you have. We're ready to provide quick and helpful responses to make your experience seamless.</p>
+                        <p className='w-[95%] md:w-[85%]'>Our team is here to assist with any inquiries you have. We're ready to provide quick and helpful responses to make your experience seamless.</p>
                         <div class="flex">
                             <div class="flex text-white py-1 px-10 mt-4 rounded-4xl bg-[#E64E37] cursor-pointer transform transition-transform duration-300 hover:scale-105">
                                 Let's Talk
                             </div>
                         </div>
-                        <div><img src={calling} alt="" className='w-[70%] lg:w-[90%] mt-4' /></div>
+                        <div><img src={calling} alt="" className='w-[100%] lg:w-[90%] mt-4' /></div>
                     </div>
                     <div className='lg:w-[50%] flex justify-center items-center'>
                         <div className='bg-white p-8 rounded-2xl shadow-lg '>

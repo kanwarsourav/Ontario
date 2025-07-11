@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
             <div className="flex flex-wrap gap-12 justify-center md:justify-between items-center">
 
                 {/* LEFT: Rating Card */}
-                <div className="relative w-[80%] md:w-[50%] lg:w-[40%] xl:w-[38%] flex justify-center md:justify-start">
+                <div className="relative w-[90%] md:w-[50%] lg:w-[40%] xl:w-[38%] flex justify-center md:justify-start">
                     <div
                         className="relative rounded-2xl overflow-hidden shadow-lg pt-8 pb-20 px-6 text-white flex flex-col items-start bg-cover bg-center w-full max-w-[400px] min-h-[480px]"
                         style={{ backgroundImage: `url(${consultbg})` }}
@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                     <img
                         src={girl}
                         alt="girl"
-                        className="absolute bottom-[-4px] sm:bottom-[-4px] right-[-55px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[200px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
+                        className="absolute bottom-[-2px] sm:bottom-[-4px] right-[-30px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[180px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
                     />
                 </div>
 
@@ -88,34 +88,34 @@ export default function WhyChooseUs() {
                     </div>
 
                     <div className="flex flex-col gap-6 w-full">
-                        <div className="flex flex-wrap md:flex-nowrap justify-center sm:justify-start gap-6">
+                        <div className="flex   sm:justify-start gap-6">
                             <div className="flex flex-col items-center sm:items-start gap-2 w-[100%] sm:w-[48%]">
                                 <img src={globe} alt="Globe Icon" />
                                 <h4 className="font-bold text-[#002768]">Global Connection</h4>
-                                <p className="text-sm w-[40%] md:w-[80%] text-center sm:text-left">
+                                <p className="text-sm w-[100%] md:w-[80%] text-center sm:text-left">
                                     A broad term for global interconnectedness and communication.
                                 </p>
                             </div>
                             <div className="flex flex-col items-center sm:items-start gap-2 w-[100%] sm:w-[48%]">
                                 <img src={process} alt="Process Icon" />
                                 <h4 className="font-bold text-[#002768]">Expertise visa Processing</h4>
-                                <p className="text-sm w-[40%] md:w-[80%] text-center sm:text-left">
+                                <p className="text-sm w-[100%] md:w-[80%] text-center sm:text-left">
                                     A broad term for global interconnectedness and communication.
                                 </p>
                             </div>
                         </div>
-                        <div className="flex flex-wrap md:flex-nowrap justify-center sm:justify-start gap-6">
+                        <div className="flex  sm:justify-start gap-6">
                             <div className="flex flex-col items-center sm:items-start gap-2 w-[100%] sm:w-[48%]">
                                 <img src={bikefast} alt="Bike Icon" />
                                 <h4 className="font-bold text-[#002768]">Fastest Working Process</h4>
-                                <p className="text-sm w-[40%] md:w-[80%] text-center sm:text-left">
+                                <p className="text-sm w-[100%] md:w-[80%] text-center sm:text-left">
                                     A broad term for global interconnectedness and communication.
                                 </p>
                             </div>
                             <div className="flex flex-col items-center sm:items-start gap-2 w-[100%] sm:w-[48%]">
                                 <img src={support} alt="Support Icon" />
                                 <h4 className="font-bold text-[#002768]">Expert Support Panel</h4>
-                                <p className="text-sm w-[40%] md:w-[80%] text-center sm:text-left">
+                                <p className="text-sm w-[100%] md:w-[80%] text-center sm:text-left">
                                     A broad term for global interconnectedness and communication.
                                 </p>
                             </div>
