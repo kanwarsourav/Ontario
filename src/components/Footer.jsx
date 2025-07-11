@@ -17,7 +17,7 @@ export default function Footer() {
         className="bg-cover bg-center h-full w-full bg-[#002768]"
         style={{ backgroundImage: `url(${footerbg})` }}
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap gap-2 lg:gap-0 flex justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap gap-4 lg:gap-0 flex justify-between">
           {/* Logo Section */}
           <div className="flex flex-col gap-6 lg:w-[24%]">
             <div>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* Quick Links */}
           <div className="lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Quick Links</h3>
-            <ul className="flex flex-col gap-2 mt-4">
+            <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               {['About Us', 'Our Team', 'Contact Us', 'Blogs'].map((label) => (
                 <li
                   key={label}
@@ -75,7 +75,7 @@ export default function Footer() {
           {/* Our Services */}
           <div className="lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Our Services</h3>
-            <ul className="flex flex-col gap-2 mt-4">
+            <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               {['Work Visa', 'Tourist Visa', 'Student Visa', 'Business Visa'].map((label) => (
                 <li
                   key={label}

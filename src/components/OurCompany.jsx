@@ -42,7 +42,7 @@ export default function OurCompany() {
         </div>
 
         {/* RIGHT: TEXT */}
-        <div className="flex flex-col gap-3 justify-center items-start md:w-[45%] mt-2 md:mt-0">
+        <div className="flex flex-col gap-3 justify-center items-start md:w-[45%] mt-6 md:mt-0">
           <h5 className="flex text-[#E64E37] font-medium gap-2 items-center">
             <img src={aeroplane} alt="plane" /> Our Company
           </h5>
@@ -53,16 +53,16 @@ export default function OurCompany() {
             We don’t just help you get a visa — we guide you toward the right job, the right country, and the right future.
           </p>
            <ul class="flex flex-col mt-3">
-                            <div class="flex gap-4 text-[#002768]">
-                                <li class="flex gap-2 items-center font-medium"><div>
+                            <div class="flex gap-3 text-[#002768]">
+                                <li class="flex gap-2 items-center font-medium text-sm"><div>
                                     <img src={list} alt="" />
                                 </div>Personalized Career Guidance</li>
-                                <li class="flex gap-2 items-center font-medium"><div>
+                                <li class="flex gap-2 items-center font-medium text-sm"><div>
                                     <img src={list} alt="" />
                                 </div>End-to-End Visa Support</li>
                             </div>
                             <ul>
-                                <li class="flex gap-2 items-center font-medium text-[#002768]"><div>
+                                <li class="flex gap-2 items-center font-medium text-[#002768] text-sm"><div>
                                     <img src={list} alt="" />
                                 </div>Job-Oriented Approach</li>
                             </ul>
