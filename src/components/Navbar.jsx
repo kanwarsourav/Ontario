@@ -13,6 +13,7 @@ export default function Navbar() {
 
   const dropdownRef = useRef(null);
   const mobileDropdownRef = useRef(null);
+  const toggleButtonRef = useRef(null);
 
   const toggleDropdown = (menuName) => {
     setOpenDropdown(prev => (prev === menuName ? null : menuName));
@@ -41,7 +42,9 @@ export default function Navbar() {
     const handleClickOutside = (event) => {
       if (
         mobileDropdownRef.current &&
-        !mobileDropdownRef.current.contains(event.target)
+        !mobileDropdownRef.current.contains(event.target) &&
+        toggleButtonRef.current &&
+        !toggleButtonRef.current.contains(event.target)
       ) {
         setMobileDropdown(null);
         setIsOpen(false);
@@ -119,9 +122,13 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Hamburger Icon */}
-        <div className="md:hidden">
+        <div className="md:hidden" ref={toggleButtonRef}>
           <button onClick={() => setIsOpen(!isOpen)}>
-            <img src={isOpen ? closeIcon : menuIcon} alt="Menu" className="w-6" />
+            <img
+              src={isOpen ? closeIcon : menuIcon}
+              alt="Menu"
+              className="w-6"
+            />
           </button>
         </div>
       </div>
@@ -130,7 +137,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white px-4 pb-4 shadow" ref={mobileDropdownRef}>
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <li>Home</li>
+            <li onClick={() => setIsOpen(false)}>Home</li>
 
             <li onClick={() => toggleMobileDropdown("company")} className="flex items-center gap-2">
               <span>About Us</span>
@@ -169,7 +176,7 @@ export default function Navbar() {
               </ul>
             )}
 
-            <li>Our Team</li>
+            <li onClick={() => setIsOpen(false)}>Our Team</li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
               <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-105" />
