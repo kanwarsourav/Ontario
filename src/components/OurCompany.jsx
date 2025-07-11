@@ -37,7 +37,7 @@ export default function OurCompany() {
           >
             <img src={threeperson} alt="badge" className="w-5 md:w-7 mb-1 " />
             <span className="text-base md:text-2xl font-bold leading-none">1000+</span>
-            <span className="text-xs leading-tight">Trusted Customer</span>
+            <span className="text-[10px] leading-tight">Trusted Customer</span>
           </div>
         </div>
 
