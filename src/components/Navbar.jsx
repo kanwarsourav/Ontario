@@ -36,7 +36,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Detect clicks outside for mobile dropdowns
+  // Detect clicks outside for mobile dropdown and close hamburger menu
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -44,6 +44,7 @@ export default function Navbar() {
         !mobileDropdownRef.current.contains(event.target)
       ) {
         setMobileDropdown(null);
+        setIsOpen(false);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
