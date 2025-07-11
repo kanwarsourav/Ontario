@@ -30,7 +30,7 @@ export default function OurConsultancy() {
           </h2>
 
           {/* Toggle Buttons */}
-          <div className="flex p-1 gap-1.5 mt-4 md:border md:border-white rounded-4xl justify-center md:justify-between flex-col sm:flex-row mx-5 sm:mx-0 md:flex-nowrap">
+          <div className="flex p-1 gap-1.5 mt-4 md:border md:border-white rounded-4xl justify-center md:justify-between flex-col sm:flex-row md:flex-nowrap">
             {/* Apply Visa Online */}
             <div className="flex">
               <button
