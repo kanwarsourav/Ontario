@@ -4,7 +4,8 @@ import Home from './components/Home'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from './components/AboutUs'
 
 
 
@@ -13,11 +14,17 @@ function App() {
 
   return (
     <>
-    
-      <Header />
-      <Navbar/>
-      <Home/>
-      <Footer/>
+
+      <BrowserRouter>
+        <Header />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
     </>
   )
 }

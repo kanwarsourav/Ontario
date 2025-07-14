@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
 import arrow from '../assets/images/arrowdown.svg';
 import call from '../assets/images/call.svg';
@@ -7,9 +8,9 @@ import closeIcon from '../assets/images/close.svg';
 import '../App.css';
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);         // animation trigger
-  const [isVisible, setIsVisible] = useState(false);   // actual presence in DOM
-  const [isClosing, setIsClosing] = useState(false);   // handle exit animation
+  const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   const [openDropdown, setOpenDropdown] = useState(null);
   const [mobileDropdown, setMobileDropdown] = useState(null);
@@ -28,15 +29,13 @@ export default function Navbar() {
 
   const handleHamburgerClick = () => {
     if (isVisible) {
-      // closing
       setIsClosing(true);
       setTimeout(() => {
         setIsOpen(false);
         setIsVisible(false);
         setIsClosing(false);
-      }, 400); // match animation duration
+      }, 400);
     } else {
-      // opening
       setIsVisible(true);
       setIsOpen(true);
     }
@@ -63,7 +62,7 @@ export default function Navbar() {
 
       if (clickedOutsideMenu && clickedOutsideToggle) {
         setMobileDropdown(null);
-        handleHamburgerClick(); // animate close
+        handleHamburgerClick();
       }
     };
 
@@ -73,7 +72,6 @@ export default function Navbar() {
     };
   }, [isVisible]);
 
-  // Optional: Prevent Body Scroll on Mobile Menu Open
   useEffect(() => {
     document.body.style.overflow = isVisible ? 'hidden' : 'auto';
     return () => {
@@ -84,25 +82,30 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
-        <div className="cursor-pointer">
+
+        {/* ✅ Logo redirects to home */}
+        <Link to="/" className="cursor-pointer">
           <img src={logo} alt="Logo" />
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative" ref={dropdownRef}>
-          <li className="cursor-pointer">Home</li>
+          <Link to="/" className="cursor-pointer">
+            Home
+          </Link>
+
+
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("company")}>
-            <div className="flex items-center gap-1">
-              About Us
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "company" ? "rotate-180" : ""}`} />
-            </div>
-            {openDropdown === "company" && (
-              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Company</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Our Team</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Careers</li>
-              </ul>
-            )}
+            <Link to="/about" className="cursor-pointer">
+            About Us
+          </Link>
+            {/* {openDropdown === "company" && ( */}
+              {/* // <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
+              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Company</li>
+              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Our Team</li>
+              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Careers</li>
+              // </ul>
+            // )} */}
           </li>
 
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("visas")}>
