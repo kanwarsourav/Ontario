@@ -167,17 +167,10 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
             <li onClick={handleHamburgerClick}>Home</li>
 
-            <li onClick={() => toggleMobileDropdown("company")} className="flex items-center gap-2">
-              <span>About Us</span>
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "company" ? "rotate-180" : ""}`} />
-            </li>
-            {mobileDropdown === "company" && (
-              <ul className="ml-4 space-y-2 text-sm">
-                <li>Company</li>
-                <li>Our Team</li>
-                <li>Careers</li>
-              </ul>
-            )}
+            
+            <Link to="/about" className="cursor-pointer">
+            About Us
+          </Link>
 
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
               <span>Our Services</span>
