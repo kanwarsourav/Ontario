@@ -10,9 +10,9 @@ export default function AboutUs() {
 
                 <h2 className='flex justify-center items-center font-bold text-5xl text-white'>About Us</h2>
             </div >
-            <div className='max-w-7xl mx-auto px-4 md:px-12 '>
+            <div className='max-w-7xl mx-auto px-4 md:px-12 flex '>
 
-                <div className='flex justify-center gap-14  py-6'>
+                <div className='flex justify-center flex-wrap md:flex-nowrap gap-6 md:gap-14  py-6'>
                     <div className='flex flex-col gap-2 md:w-[45%]'>
                         <h5 className="flex text-[#E64E37] font-medium gap-2 items-center">
                             <img src={aeroplane} alt="plane" /> Company Intro
