@@ -49,7 +49,7 @@ export default function TestimonialCarousel() {
   };
 
   return (
-    <div className="w-full bg-white py-12">
+    <div className="w-full bg-[#F0F2F6] py-12">
       <div className="max-w-7xl mx-auto px-2 md:px-8">
         {/* Section Heading */}
         <div className=" flex flex-col justify-center items-center text-center mb-5">
@@ -66,7 +66,7 @@ export default function TestimonialCarousel() {
           {/* Left Arrow */}
           <button
             onClick={() => sliderRef.current?.slickPrev()}
-            className="text-black w-10 h-10 flex items-center justify-center "
+            className="text-[#E64E37]  w-10 h-10 flex items-center justify-center "
             aria-label="Previous"
           >
             <FaArrowLeft size={18} />
@@ -77,7 +77,7 @@ export default function TestimonialCarousel() {
             <Slider ref={sliderRef} {...settings}>
               {testimonials.map((t, idx) => (
                 <div key={idx} className="px-3 my-6">
-                  <div className="bg-white border border-gray-200 rounded-2xl shadow-md p-6  transform transition-transform duration-300 hover:scale-105 h-full">
+                  <div className="bg-white  border-gray-200 rounded-2xl shadow-md p-6  transform transition-transform duration-300 hover:scale-105 h-full">
                     {/* Image */}
                     <img
                       src={t.image}
@@ -106,7 +106,7 @@ export default function TestimonialCarousel() {
           {/* Right Arrow */}
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className="text-black w-10 h-10 flex items-center justify-center "
+            className="text-[#E64E37]  w-10 h-10 flex items-center justify-center "
             aria-label="Next"
           >
             <FaArrowRight size={18} />

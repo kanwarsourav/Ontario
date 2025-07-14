@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import consultancy from '../assets/images/consultancybg.svg';
 import aeroplane2 from '../assets/images/aeroplane2.svg';
 import whitecircle from '../assets/images/whitecircle.svg';
@@ -9,8 +9,22 @@ import flyaero from '../assets/images/flyaero.svg';
 export default function OurConsultancy() {
   const [openSection, setOpenSection] = useState(null);
 
+  // Load from localStorage on mount
+  useEffect(() => {
+    const savedSection = localStorage.getItem('openSection');
+    if (savedSection) {
+      setOpenSection(savedSection);
+    } else {
+      // Optional: default to 'visa' if no previous value
+      setOpenSection('visa');
+    }
+  }, []);
+
+  // Update localStorage on change
   const toggleSection = (section) => {
-    setOpenSection((prev) => (prev === section ? null : section));
+    const newSection = openSection === section ? null : section;
+    setOpenSection(newSection);
+    localStorage.setItem('openSection', newSection || '');
   };
 
   return (
@@ -32,20 +46,18 @@ export default function OurConsultancy() {
           {/* Toggle Buttons */}
           <div className="flex p-1 gap-1.5 mt-4 md:border md:border-white rounded-4xl justify-center md:justify-between flex-col sm:flex-row md:flex-nowrap">
             {/* Apply Visa Online */}
-            <div className="flex">
-              <button
-                onClick={() => toggleSection('visa')}
-                className={`flex py-1 px-10 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center sm:mx-0 transition-colors duration-200
-                  ${openSection === 'visa' ? 'bg-[#E64E37] text-white' : 'bg-white text-[#002768]'}`}
-              >
-                Apply Visa Online
-              </button>
-            </div>
+            <button
+              onClick={() => toggleSection('visa')}
+              className={`flex py-1 px-10 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center transition-colors duration-200
+                ${openSection === 'visa' ? 'bg-[#E64E37] text-white' : 'bg-white text-[#002768]'}`}
+            >
+              Apply Visa Online
+            </button>
 
             {/* Important Information */}
             <button
               onClick={() => toggleSection('info')}
-              className={`flex py-1 px-6 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center sm:mx-0 transition-colors duration-200
+              className={`flex py-1 px-6 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center transition-colors duration-200
                 ${openSection === 'info' ? 'bg-[#E64E37] text-white' : 'bg-white text-[#002768]'}`}
             >
               Important Information
@@ -54,7 +66,7 @@ export default function OurConsultancy() {
             {/* Immigration Resources */}
             <button
               onClick={() => toggleSection('resources')}
-              className={`flex py-1 px-6 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center sm:mx-0 transition-colors duration-200
+              className={`flex py-1 px-6 text-sm rounded-4xl font-semibold cursor-pointer justify-center items-center transition-colors duration-200
                 ${openSection === 'resources' ? 'bg-[#E64E37] text-white' : 'bg-white text-[#002768]'}`}
             >
               Immigration Resources
@@ -63,39 +75,50 @@ export default function OurConsultancy() {
 
           {/* Toggleable Descriptions */}
           {openSection === 'visa' && (
-            <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
-              Start your visa application online with a simple and secure form. Upload your documents and get real-time updates.
-            </p>
+            <div className="flex flex-col gap-2 mt-4">
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Personal information is protected.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Monitor your progress.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> User-friendly experience start.
+              </h5>
+            </div>
           )}
           {openSection === 'info' && (
-            <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
-              Get all the latest updates about visa policies, travel restrictions, and government advisories.
-            </p>
+            <div className="flex flex-col gap-2 mt-4">
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Expert-Led Guidance.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Up-to-Date Visa Regulations.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Tailored Advice.
+              </h5>
+            </div>
           )}
           {openSection === 'resources' && (
-            <p className="mt-4 text-white text-sm bg-[#ffffff1a] p-4 rounded-xl w-[86%]">
-              Access comprehensive immigration guides, document checklists, and country-specific visa requirements.
-            </p>
+            <div className="flex flex-col gap-2 mt-4">
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Visa Guides & Checklists.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Legal Insights.
+              </h5>
+              <h5 className="flex text-white gap-2 font-medium">
+                <img src={whitecircle} alt="" /> Document Templates.
+              </h5>
+            </div>
           )}
-
-          {/* Features */}
-          <div className="flex flex-col gap-2 mt-4">
-            <h5 className="flex text-white gap-2 font-medium">
-              <img src={whitecircle} alt="" /> Personal information is protected.
-            </h5>
-            <h5 className="flex text-white gap-2 font-medium">
-              <img src={whitecircle} alt="" /> Monitor your progress.
-            </h5>
-            <h5 className="flex text-white gap-2 font-medium">
-              <img src={whitecircle} alt="" /> User-friendly experience start.
-            </h5>
-          </div>
         </div>
 
         {/* Right Section */}
         <div className="flex flex-col gap-6 lg:w-[50%] justify-center items-center">
           <img src={signing} alt="" className="rounded-2xl" />
-          <div className="hidden gap-6  md:flex justify-center md:justify-between items-center">
+          <div className="hidden gap-6 md:flex justify-center md:justify-between items-center">
             <img src={givingvisa} alt="" className="rounded-2xl" />
             <img src={flyaero} alt="" className="rounded-2xl" />
           </div>

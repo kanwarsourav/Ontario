@@ -8,7 +8,7 @@ import business from '../assets/images/business.svg';
 export default function HelpClient() {
     return (
         <>
-            <div>
+            <div >
                 <div className="max-w-7xl m-auto px-4 md:px-12 my-2 flex flex-col flex-wrap">
                     <div className="flex flex-col items-center justify-center text-center">
                         <div className="flex">
