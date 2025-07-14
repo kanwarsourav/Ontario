@@ -165,7 +165,9 @@ export default function Navbar() {
             ${isClosing ? 'animate-fadeOutDiagonal' : 'animate-fadeInDiagonal'}`}
         >
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <li onClick={handleHamburgerClick}>Home</li>
+            <Link to="/" className="cursor-pointer">
+            Home
+          </Link>
 
             
             <Link to="/about" className="cursor-pointer">
