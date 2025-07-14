@@ -21,8 +21,7 @@ export default function Home() {
   return (
     <>
   
-      
-
+    
       <FadeInSection direction="right"><Banner /></FadeInSection>
       <FadeInSection direction="left"><OurCompany /></FadeInSection>
       <FadeInSection direction="right"><WorkVisa /></FadeInSection>

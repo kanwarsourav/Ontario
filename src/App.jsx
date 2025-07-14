@@ -12,13 +12,13 @@ function App() {
 
 
   return (
-    <>
+    <div className="overflow-x-hidden w-full">
     
       <Header />
       <Navbar/>
       <Home/>
       <Footer/>
-    </>
+    </div>
   )
 }
 

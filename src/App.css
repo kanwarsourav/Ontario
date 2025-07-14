@@ -30,3 +30,15 @@
   animation: fadeOutDiagonal 0.4s ease-in forwards;
 }
 
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
