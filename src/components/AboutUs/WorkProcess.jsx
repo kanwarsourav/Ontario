@@ -26,21 +26,21 @@ export default function WorkProcess() {
                             <img src={one} alt="" />
                         </div>
                         <h4 className='font-bold text-xl text-[#002768]'>IELTS Preparation and Scoring</h4>
-                        <p className='md:w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
+                        <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
                     <div className='md:w-[30%] flex justify-center flex-col items-center gap-2'>
                         <div>
                             <img src={two} alt="" />
                         </div>
                         <h4 className='font-bold text-xl text-[#002768]'>IELTS Preparation and Scoring</h4>
-                        <p className='md:w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
+                        <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
                     <div className='md:w-[30%] flex justify-center flex-col items-center gap-2'>
                         <div>
                             <img src={three} alt="" />
                         </div>
                         <h4 className='font-bold text-xl text-[#002768]'>IELTS Preparation and Scoring</h4>
-                        <p className='md:w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
+                        <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
                 </div>
             </div>
