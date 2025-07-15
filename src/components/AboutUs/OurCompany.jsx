@@ -4,10 +4,12 @@ import grouppeople from '../../assets/images/grouppeople.svg';
 import aeroplane from '../../assets/images/aeroplane.svg';
 import list from '../../assets/images/list.svg';
 import threeperson from '../../assets/images/3person.svg';
+import companybg from '../../assets/images/companybg.svg';
 
 export default function OurCompany() {
   return (
-    <div>
+    <div className=' bg-cover bg-center h-full w-full bg-[#002768] '
+                    style={{ backgroundImage: `url(${companybg})` }}>
       <div className="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-12">
         
         {/* LEFT: IMAGES */}

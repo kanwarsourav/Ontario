@@ -34,7 +34,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className=' flex justify-center items-center'>
-                    <img src={discussing} alt="" className='w-[90%]' />
+                    <img src={discussing} alt="" className='md:w-[90%]' />
                 </div>
             </div>
         </>
