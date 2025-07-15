@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './AboutUs/Header'
 import OurCompany from './AboutUs/OurCompany'
+import OurTeam from './AboutUs/OurTeam'
 
 
 export default function AboutUs() {
@@ -8,6 +9,7 @@ export default function AboutUs() {
         <>
             <Header/>
             <OurCompany/>
+            <OurTeam/>
 
 
         </>

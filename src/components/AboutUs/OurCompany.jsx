@@ -10,7 +10,7 @@ export default function OurCompany() {
   return (
     <div className=' bg-cover bg-center h-full w-full bg-[#002768] '
                     style={{ backgroundImage: `url(${companybg})` }}>
-      <div className="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-12">
+      <div className="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-24">
         
         {/* LEFT: IMAGES */}
         <div className="relative flex items-center justify-center md:w-[50%] pt-5">
