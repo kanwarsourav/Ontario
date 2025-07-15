@@ -1,6 +1,6 @@
 import React from 'react'
-import aeroplane from '../assets/images/aeroplane.svg';
-import calling from '../assets/images/calling.svg';
+import aeroplane from '../../assets/images/aeroplane.svg';
+import calling from '../../assets/images/calling.svg';
 
 export default function Enquirys() {
     return (

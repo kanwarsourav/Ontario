@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import cloud from '../assets/images/cloud.svg';
-import centerImg from '../assets/images/aeroimg.svg';
+import cloud from '../../assets/images/cloud.svg';
+import centerImg from '../../assets/images/aeroimg.svg';
 
 export default function WorkVisa() {
   return (

@@ -1,18 +1,18 @@
 import React from 'react';
-import aeroplane from '../assets/images/aeroplane.svg';
+import aeroplane from '../../assets/images/aeroplane.svg';
 
-import canada from '../assets/images/canada.svg';
-import belgium from '../assets/images/belgium.svg';
-import denmark from '../assets/images/denmark.svg';
-import australia from '../assets/images/australia.svg';
-import france from '../assets/images/france.svg';
-import germany from '../assets/images/germany.svg';
-import greece from '../assets/images/greece.svg';
-import hungary from '../assets/images/hungary.svg';
-import iceland from '../assets/images/iceland.svg';
-import ireland from '../assets/images/ireland.svg';
-import italy from '../assets/images/italy.svg';
-import luxembourg from '../assets/images/luxembourg.svg';
+import canada from '../../assets/images/canada.svg';
+import belgium from '../../assets/images/belgium.svg';
+import denmark from '../../assets/images/denmark.svg';
+import australia from '../../assets/images/australia.svg';
+import france from '../../assets/images/france.svg';
+import germany from '../../assets/images/germany.svg';
+import greece from '../../assets/images/greece.svg';
+import hungary from '../../assets/images/hungary.svg';
+import iceland from '../../assets/images/iceland.svg';
+import ireland from '../../assets/images/ireland.svg';
+import italy from '../../assets/images/italy.svg';
+import luxembourg from '../../assets/images/luxembourg.svg';
 
 export default function CountryList() {
     return (

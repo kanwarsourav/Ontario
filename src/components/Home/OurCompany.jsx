@@ -1,9 +1,9 @@
 import React from 'react';
-import trusted from '../assets/images/trustedcustomer.svg';      // Main image (woman)
-import grouppeople from '../assets/images/grouppeople.svg';      // Bottom-right image
-import aeroplane from '../assets/images/aeroplane.svg';
-import list from '../assets/images/list.svg';
-import threeperson from '../assets/images/3person.svg';
+import trusted from '../../assets/images/trustedcustomer.svg';      // Main image (woman)
+import grouppeople from '../../assets/images/grouppeople.svg';      // Bottom-right image
+import aeroplane from '../../assets/images/aeroplane.svg';
+import list from '../../assets/images/list.svg';
+import threeperson from '../../assets/images/3person.svg';
 
 export default function OurCompany() {
   return (

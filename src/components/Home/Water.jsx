@@ -1,5 +1,5 @@
 import React from 'react'
-import water from '../assets/images/water.svg'
+import water from '../../assets/images/water.svg'
 
 export default function Water() {
     return (

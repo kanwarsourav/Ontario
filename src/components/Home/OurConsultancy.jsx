@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import consultancy from '../assets/images/consultancybg.svg';
-import aeroplane2 from '../assets/images/aeroplane2.svg';
-import whitecircle from '../assets/images/whitecircle.svg';
-import signing from '../assets/images/signing.svg';
-import givingvisa from '../assets/images/givingvisa.svg';
-import flyaero from '../assets/images/flyaero.svg';
+import consultancy from '../../assets/images/consultancybg.svg';
+import aeroplane2 from '../../assets/images/aeroplane2.svg';
+import whitecircle from '../../assets/images/whitecircle.svg';
+import signing from '../../assets/images/signing.svg';
+import givingvisa from '../../assets/images/givingvisa.svg';
+import flyaero from '../../assets/images/flyaero.svg';
 
 export default function OurConsultancy() {
   const [openSection, setOpenSection] = useState(null);

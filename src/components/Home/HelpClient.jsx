@@ -1,9 +1,9 @@
 import React from 'react';
-import aeroplane from '../assets/images/aeroplane.svg';
-import laptop from '../assets/images/laptopworking.svg';
-import aeroplane1 from '../assets/images/aeroplane1.svg';
-import student from '../assets/images/student.svg';
-import business from '../assets/images/business.svg';
+import aeroplane from '../../assets/images/aeroplane.svg';
+import laptop from '../../assets/images/laptopworking.svg';
+import aeroplane1 from '../../assets/images/aeroplane1.svg';
+import student from '../../assets/images/student.svg';
+import business from '../../assets/images/business.svg';
 
 export default function HelpClient() {
     return (

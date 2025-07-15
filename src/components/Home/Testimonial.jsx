@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { FaArrowLeft, FaArrowRight, FaStar } from 'react-icons/fa';
-import aeroplane from '../assets/images/aeroplane.svg'; 
+import aeroplane from '../../assets/images/aeroplane.svg'; 
 
 // Testimonial data
 const testimonials = [

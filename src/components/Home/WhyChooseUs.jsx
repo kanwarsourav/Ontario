@@ -1,14 +1,14 @@
 import React from 'react';
-import consultbg from '../assets/images/consultbg.svg';
-import star from '../assets/images/star.svg';
-import halfstar from '../assets/images/halfstar.svg';
-import girl from '../assets/images/chooseus.png';
+import consultbg from '../../assets/images/consultbg.svg';
+import star from '../../assets/images/star.svg';
+import halfstar from '../../assets/images/halfstar.svg';
+import girl from '../../assets/images/chooseus.png';
 
-import aeroplane from '../assets/images/aeroplane.svg';
-import globe from '../assets/images/globe.svg';
-import process from '../assets/images/process.svg';
-import bikefast from '../assets/images/bikefast.svg';
-import support from '../assets/images/support.svg';
+import aeroplane from '../../assets/images/aeroplane.svg';
+import globe from '../../assets/images/globe.svg';
+import process from '../../assets/images/process.svg';
+import bikefast from '../../assets/images/bikefast.svg';
+import support from '../../assets/images/support.svg';
 
 export default function WhyChooseUs() {
     return (

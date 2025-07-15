@@ -1,8 +1,8 @@
 import React from 'react'
-import aeroplane from '../assets/images/aeroplane.svg';
-import passport from '../assets/images/passport.svg';
-import indianman from '../assets/images/indianman.svg';
-import together from '../assets/images/together.svg';
+import aeroplane from '../../assets/images/aeroplane.svg';
+import passport from '../../assets/images/passport.svg';
+import indianman from '../../assets/images/indianman.svg';
+import together from '../../assets/images/together.svg';
 
 export default function Blogs() {
     return (

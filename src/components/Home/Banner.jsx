@@ -1,7 +1,7 @@
 import React from 'react'
-import bannerBg from '../assets/images/bannerbg.svg';
-import visa from '../assets/images/visa.svg';
-import '../App.css'
+import bannerBg from '../../assets/images/bannerbg.svg';
+import visa from '../../assets/images/visa.svg';
+import '../../App.css'
 export default function Banner() {
     return (
         <>
