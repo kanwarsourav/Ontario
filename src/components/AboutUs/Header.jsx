@@ -1,16 +1,19 @@
 import React from 'react'
 import aboutusbg from '../../assets/images/aboutusbg.svg'
 import aeroplane from '../../assets/images/aeroplane.svg';
+import discussing from '../../assets/images/discussing.svg';
+
 
 export default function Header() {
-  return (
-    <>
-     <div className=' bg-cover bg-center h-40 w-full bg-[#002768] flex  justify-center '
+    return (
+        <>
+            <div className=' bg-cover bg-center h-40 w-full bg-[#002768] flex  justify-center '
                 style={{ backgroundImage: `url(${aboutusbg})` }}>
 
                 <h2 className='flex justify-center items-center font-bold text-5xl text-white'>About Us</h2>
             </div >
-            <div className='max-w-7xl mx-auto px-4 md:px-12 flex'>
+
+            <div className='max-w-7xl mx-auto px-4 md:px-12 flex flex-col'>
 
                 <div className='flex justify-center flex-wrap md:flex-nowrap gap-6 md:gap-14  py-6'>
                     <div className='flex flex-col gap-2 md:w-[45%]'>
@@ -30,8 +33,10 @@ export default function Header() {
                         </p>
                     </div>
                 </div>
-                <div></div>
-            </div> 
-    </>
-  )
+                <div className=' flex justify-center items-center'>
+                    <img src={discussing} alt="" className='w-[90%]' />
+                </div>
+            </div>
+        </>
+    )
 }
