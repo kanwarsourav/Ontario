@@ -16,7 +16,7 @@ export default function WorkProcess() {
                         <img src={aeroplane} alt="" className="w-4 h-4" />
                         Work Process
                     </h5>
-                    <h2 className="text-[#002768] font-bold text-[32px] md:text-[40px] mt-1 md:w-[60%]">
+                    <h2 className="text-[#002768] font-bold text-[32px] md:text-[40px] mt-1 md:w-[60%] leading-none">
                         How we do our visa & Immigration processing
                     </h2>
                 </div>
