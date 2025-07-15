@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import aeroplane2 from '../../assets/images/aeroplane2.svg';
 import teambg from '../../assets/images/teambg.svg';
 import memberone from '../../assets/images/memberone.svg';
@@ -9,7 +9,6 @@ import orangefb from '../../assets/images/orangefb.svg';
 import orangeinsta from '../../assets/images/orangeinsta.svg';
 import orangein from '../../assets/images/orangein.svg';
 
-
 export default function OurTeam() {
     const teamMembers = [
         { img: memberone, name: 'Jackson Miller', title: 'Consultant' },
@@ -17,6 +16,13 @@ export default function OurTeam() {
         { img: memberthree, name: 'Sophie Tan', title: 'Specialist' },
         { img: memberfour, name: 'David Smith', title: 'Analyst' }
     ];
+
+    const [activeIndex, setActiveIndex] = useState(null);
+
+    const handleCardClick = (index) => {
+        // Toggle overlay for mobile/tablet
+        setActiveIndex(activeIndex === index ? null : index);
+    };
 
     return (
         <div
@@ -38,7 +44,8 @@ export default function OurTeam() {
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="relative md:w-[24%] cursor-pointer group  rounded-lg overflow-hidden"
+                            className="relative md:w-[24%] w-[80%] mx-auto md:mx-0 cursor-pointer group rounded-lg overflow-hidden"
+                            onClick={() => handleCardClick(index)}
                         >
                             <img
                                 src={member.img}
@@ -46,24 +53,21 @@ export default function OurTeam() {
                                 className="w-full h-auto object-cover"
                             />
 
-                            {/* Gradient Overlay: bottom 50%, top-to-bottom gradient */}
+                            {/* Gradient Overlay */}
                             <div
-                                className="absolute bottom-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white"
-                                style={{
-                                    background:
-                                        'linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(216, 28, 0, 0.2) 100%)'
-                                }}
+                                className={`
+                                    absolute bottom-0 left-0 w-full h-full 
+                                    flex flex-col justify-end p-4 text-white
+                                    transition-opacity duration-300
+                                    bg-gradient-to-b from-[rgba(0,0,0,0.2)] to-[rgba(216,28,0,0.2)]
+                                    ${activeIndex === index ? 'opacity-100' : 'opacity-0'} 
+                                    md:group-hover:opacity-100
+                                `}
                             >
                                 <div className='flex gap-3 justify-center items-center py-2'>
-                                    <div>
-                                        <img src={orangefb} alt="" className='transform transition-transform duration-300 hover:scale-110' />
-                                    </div>
-                                    <div>
-                                        <img src={orangeinsta} alt="" className='transform transition-transform duration-300 hover:scale-110' />
-                                    </div>
-                                    <div>
-                                        <img src={orangein} alt="" className='transform transition-transform duration-300 hover:scale-110' />
-                                    </div>
+                                    <img src={orangefb} alt="Facebook" className='hover:scale-110 transition-transform' />
+                                    <img src={orangeinsta} alt="Instagram" className='hover:scale-110 transition-transform' />
+                                    <img src={orangein} alt="LinkedIn" className='hover:scale-110 transition-transform' />
                                 </div>
                                 <hr />
                                 <h3 className="text-[24px] text-center font-semibold leading-none pt-2">
