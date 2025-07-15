@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 export default function Detail() {
     return (
         <div className="max-w-7xl mx-auto px-4 md:px-12 py-10">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center ">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center bg-[#FEF6F5] rounded-2xl py-3">
                 
                 {/* Clients */}
                 <div>

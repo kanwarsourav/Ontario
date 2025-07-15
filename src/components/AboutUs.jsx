@@ -2,6 +2,8 @@ import React from 'react'
 import Header from './AboutUs/Header'
 import OurCompany from './AboutUs/OurCompany'
 import OurTeam from './AboutUs/OurTeam'
+import WorkProcess from './AboutUs/WorkProcess'
+import Detail from './AboutUs/Detail'
 
 
 export default function AboutUs() {
@@ -10,6 +12,8 @@ export default function AboutUs() {
             <Header/>
             <OurCompany/>
             <OurTeam/>
+            <WorkProcess/>
+            <Detail/>
 
 
         </>

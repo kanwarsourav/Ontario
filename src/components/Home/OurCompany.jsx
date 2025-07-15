@@ -68,7 +68,7 @@ export default function OurCompany() {
                             </ul>
                         </ul>
           <div className="mt-4">
-            <button className="bg-[#E64E37] text-white py-2 px-10 rounded-full hover:scale-105 transition-transform">
+            <button className="bg-[#E64E37] text-white py-2 px-10 rounded-full hover:scale-105 transition-transform cursor-pointer">
               Learn More
             </button>
           </div>
