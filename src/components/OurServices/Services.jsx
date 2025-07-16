@@ -4,6 +4,7 @@ import workingvisa from '../../assets/images/workingvisa.svg';
 import studentvisa from '../../assets/images/studentvisa.svg';
 import touristsvisa from '../../assets/images/touristsvisa.svg';
 import { FaSuitcase, FaPlane, FaGraduationCap, FaUserTie } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
     return (
@@ -38,7 +39,7 @@ export default function Services() {
                     </div>
                     <div className="p-4 pt-0">
                         <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold">
-                            Read More
+                           <Link to="/workvisa" >Read More</Link>
                         </button>
                     </div>
                 </div>
