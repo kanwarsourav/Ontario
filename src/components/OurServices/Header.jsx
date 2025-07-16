@@ -1,7 +1,5 @@
 import React from 'react'
 import aboutusbg from '../../assets/images/aboutusbg.svg'
-import aeroplane from '../../assets/images/aeroplane.svg';
-import discussing from '../../assets/images/discussing.svg';
 
 
 export default function Header() {

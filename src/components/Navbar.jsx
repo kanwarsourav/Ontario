@@ -112,7 +112,7 @@ export default function Navbar() {
             </div>
             {openDropdown === "visas" && (
               <ul className="absolute top-full left-0 w-48 bg-white border shadow-md rounded-md py-2 z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Work Visa</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tourist Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Student Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Business Visa</li>
