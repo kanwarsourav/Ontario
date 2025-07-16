@@ -83,38 +83,35 @@ export default function Navbar() {
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
 
-        {/* ✅ Logo redirects to home */}
         <Link to="/" className="cursor-pointer">
           <img src={logo} alt="Logo" />
         </Link>
 
-        {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-10 text-[#002768] font-medium relative" ref={dropdownRef}>
-          <Link to="/" className="cursor-pointer">
-            Home
-          </Link>
+          <Link to="/" className="cursor-pointer">Home</Link>
 
-
-          <li className="relative cursor-pointer" onClick={() => toggleDropdown("company")}>
-            <Link to="/about" className="cursor-pointer">
-            About Us
-          </Link>
-            {/* {openDropdown === "company" && ( */}
-              {/* // <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
-              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Company</li>
-              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Our Team</li>
-              //   <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Careers</li>
-              // </ul>
-            // )} */}
+          <li className="relative cursor-pointer">
+            <Link to="/about" className="cursor-pointer">About Us</Link>
           </li>
 
-          <li className="relative cursor-pointer" onClick={() => toggleDropdown("visas")}>
+          {/* Hover-based dropdown with link */}
+          <li
+            className="relative cursor-pointer"
+            onMouseEnter={() => setOpenDropdown("visas")}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
             <div className="flex items-center gap-1">
-              Our Services
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "visas" ? "rotate-180" : ""}`} />
+              <Link to="/ourservices" className="flex items-center gap-1">
+                Our Services
+                <img
+                  src={arrow}
+                  alt=""
+                  className={`transition-transform duration-200 ${openDropdown === "visas" ? "rotate-180" : ""}`}
+                />
+              </Link>
             </div>
             {openDropdown === "visas" && (
-              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
+              <ul className="absolute top-full left-0  w-48 bg-white border shadow-md rounded-md py-2 z-50">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Work Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tourist Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Student Visa</li>
@@ -126,7 +123,11 @@ export default function Navbar() {
           <li className="relative cursor-pointer" onClick={() => toggleDropdown("resources")}>
             <div className="flex items-center gap-1">
               Blog
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${openDropdown === "resources" ? "rotate-180" : ""}`} />
+              <img
+                src={arrow}
+                alt=""
+                className={`transition-transform duration-200 ${openDropdown === "resources" ? "rotate-180" : ""}`}
+              />
             </div>
             {openDropdown === "resources" && (
               <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
@@ -140,7 +141,6 @@ export default function Navbar() {
           <li className="cursor-pointer">Our Team</li>
         </ul>
 
-        {/* Call Section */}
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
           <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-110 cursor-pointer" />
           <div>
@@ -149,7 +149,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Hamburger */}
         <div className="md:hidden" ref={toggleButtonRef}>
           <button onClick={handleHamburgerClick}>
             <img src={isVisible ? closeIcon : menuIcon} alt="Menu" className="w-6" />
@@ -157,7 +156,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isVisible && (
         <div
           ref={mobileDropdownRef}
@@ -165,21 +163,20 @@ export default function Navbar() {
             ${isClosing ? 'animate-fadeOutDiagonal' : 'animate-fadeInDiagonal'}`}
         >
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <Link to="/" className="cursor-pointer">
-            Home
-          </Link>
+            <Link to="/" className="cursor-pointer">Home</Link>
 
-            
-            <Link to="/about" className="cursor-pointer">
-            About Us
-          </Link>
+            <Link to="/about" className="cursor-pointer">About Us</Link>
 
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
               <span>Our Services</span>
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "visas" ? "rotate-180" : ""}`} />
+              <img
+                src={arrow}
+                alt=""
+                className={`transition-transform duration-200 ${mobileDropdown === "visas" ? "rotate-180" : ""}`}
+              />
             </li>
             {mobileDropdown === "visas" && (
-              <ul className="ml-4 space-y-2 text-sm">
+              <ul className="ml-4  text-sm">
                 <li>Work Visa</li>
                 <li>Tourist Visa</li>
                 <li>Student Visa</li>
@@ -189,7 +186,11 @@ export default function Navbar() {
 
             <li onClick={() => toggleMobileDropdown("resources")} className="flex items-center gap-2">
               <span>Blog</span>
-              <img src={arrow} alt="" className={`transition-transform duration-200 ${mobileDropdown === "resources" ? "rotate-180" : ""}`} />
+              <img
+                src={arrow}
+                alt=""
+                className={`transition-transform duration-200 ${mobileDropdown === "resources" ? "rotate-180" : ""}`}
+              />
             </li>
             {mobileDropdown === "resources" && (
               <ul className="ml-4 space-y-2 text-sm">

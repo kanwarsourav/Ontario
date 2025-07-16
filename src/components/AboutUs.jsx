@@ -4,6 +4,7 @@ import OurCompany from './AboutUs/OurCompany'
 import OurTeam from './AboutUs/OurTeam'
 import WorkProcess from './AboutUs/WorkProcess'
 import Detail from './AboutUs/Detail'
+import Testimonial from './AboutUs/Testimonial'
 
 
 export default function AboutUs() {
@@ -14,6 +15,7 @@ export default function AboutUs() {
             <OurTeam/>
             <Detail/>
             <WorkProcess/>
+            <Testimonial/>
             
 
 

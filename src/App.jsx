@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from './components/AboutUs'
+import OurServices from './components/OurServices'
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs/>} />
+          <Route path="/ourservices" element={<OurServices/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
