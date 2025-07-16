@@ -168,7 +168,7 @@ export default function Navbar() {
             <Link to="/about" className="cursor-pointer">About Us</Link>
 
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
-              <span>Our Services</span>
+              <Link to="/ourservices" className="cursor-pointer">Our Services</Link>
               <img
                 src={arrow}
                 alt=""
