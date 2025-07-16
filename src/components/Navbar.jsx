@@ -169,7 +169,7 @@ export default function Navbar() {
             <Link to="/about" onClick={handleHamburgerClick}>About Us</Link>
 
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
-              <span>Our Services</span>
+              <Link to="/ourservices" onClick={handleHamburgerClick}>Our Services</Link>
               <img
                 src={arrow}
                 alt=""
