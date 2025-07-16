@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
 import footerbg from '../assets/images/footerbg.svg';
 import circlefb from '../assets/images/circlefb.svg';
@@ -8,7 +9,6 @@ import orangeaeroplane from '../assets/images/orangeaeroplane.svg';
 
 export default function Footer() {
   const [activeLink, setActiveLink] = useState(null);
-
   const isActive = (label) => activeLink === label;
 
   return (
@@ -18,30 +18,19 @@ export default function Footer() {
         style={{ backgroundImage: `url(${footerbg})` }}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap gap-4 lg:gap-0 flex justify-between">
+          
           {/* Logo Section */}
           <div className="flex flex-col gap-6 lg:w-[24%]">
             <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logo" />
             </div>
             <p className="text-white w-[75%]">
               Open doors to international opportunities and grow your career without borders.
             </p>
             <div className="flex gap-4">
-              <img
-                src={circlefb}
-                alt=""
-                className="cursor-pointer transform transition-transform duration-300 hover:scale-115"
-              />
-              <img
-                src={circleinsta}
-                alt=""
-                className="cursor-pointer transform transition-transform duration-300 hover:scale-115"
-              />
-              <img
-                src={circlein}
-                alt=""
-                className="cursor-pointer transform transition-transform duration-300 hover:scale-115"
-              />
+              <img src={circlefb} alt="Facebook" className="cursor-pointer hover:scale-115 transition-transform duration-300" />
+              <img src={circleinsta} alt="Instagram" className="cursor-pointer hover:scale-115 transition-transform duration-300" />
+              <img src={circlein} alt="LinkedIn" className="cursor-pointer hover:scale-115 transition-transform duration-300" />
             </div>
           </div>
 
@@ -49,26 +38,34 @@ export default function Footer() {
           <div className="lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Quick Links</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
-              {['About Us', 'Our Team', 'Contact Us', 'Blogs'].map((label) => (
-                <li
-                  key={label}
-                  className="text-white flex gap-1 text-[18px] items-center cursor-pointer"
-                  onClick={() => setActiveLink(label)}
-                >
-                  <div>
-                    <img src={orangeaeroplane} alt="" />
-                  </div>
-                  <span className="relative group">
-                    {label}
-                    <span
-                      className={`
-                        absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300
-                        ${isActive(label) ? 'w-full' : 'w-0 group-hover:w-full'}
-                      `}
-                    ></span>
-                  </span>
-                </li>
-              ))}
+              <li onClick={() => setActiveLink('About Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  <Link to="/about" className="cursor-pointer">About Us</Link>
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('About Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Our Team')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group cursor-pointer">
+                  Our Team
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Our Team') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Contact Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group cursor-pointer">
+                  Contact Us
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Contact Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Blogs')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  <Link to="/blogs" className="cursor-pointer">Blogs</Link>
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Blogs') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -76,26 +73,34 @@ export default function Footer() {
           <div className="lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Our Services</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
-              {['Work Visa', 'Tourist Visa', 'Student Visa', 'Business Visa'].map((label) => (
-                <li
-                  key={label}
-                  className="text-white flex gap-1 text-[18px] items-center cursor-pointer"
-                  onClick={() => setActiveLink(label)}
-                >
-                  <div>
-                    <img src={orangeaeroplane} alt="" />
-                  </div>
-                  <span className="relative group">
-                    {label}
-                    <span
-                      className={`
-                        absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300
-                        ${isActive(label) ? 'w-full' : 'w-0 group-hover:w-full'}
-                      `}
-                    ></span>
-                  </span>
-                </li>
-              ))}
+              <li onClick={() => setActiveLink('Work Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  Work Visa
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Work Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Tourist Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  Tourist Visa
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Tourist Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Student Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  Student Visa
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Student Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              <li onClick={() => setActiveLink('Business Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group">
+                  Business Visa
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Business Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -106,21 +111,20 @@ export default function Footer() {
               Enter your email address to get latest updates and offers from us.
             </p>
             <div className="relative w-full sm:w-60 mt-2">
-  <input
-    type="email"
-    placeholder="Enter your email"
-    className="px-3 py-2 pr-10 w-full border-2 border-[#FBDFDB] bg-[#FFF5F3] text-[#002768] rounded"
-  />
-  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#002768] cursor-pointer">
-    ➔
-  </span>
-</div>
-
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="px-3 py-2 pr-10 w-full border-2 border-[#FBDFDB] bg-[#FFF5F3] text-[#002768] rounded"
+              />
+              <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#002768] cursor-pointer">
+                ➔
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Footer Bottom Bar */}
+      {/* Bottom Bar */}
       <div className="bg-[#E64E37] flex justify-center items-center py-1 text-white">
         <h4>Copyright © 2025 All Rights Reserved.</h4>
       </div>

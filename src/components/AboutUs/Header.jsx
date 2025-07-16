@@ -15,7 +15,6 @@ export default function Header() {
             </div >
 
             <div className='max-w-7xl mx-auto px-4 md:px-12 flex flex-col'>
-
                 <div className='flex justify-center flex-wrap md:flex-nowrap gap-6 md:gap-14  py-6'>
                     <div className='flex flex-col gap-2 md:w-[45%]'>
                         <h5 className="flex text-[#E64E37] font-medium gap-2 items-center">
