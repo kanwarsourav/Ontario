@@ -12,8 +12,9 @@ export default function AboutUs() {
             <Header/>
             <OurCompany/>
             <OurTeam/>
-            <WorkProcess/>
             <Detail/>
+            <WorkProcess/>
+            
 
 
         </>

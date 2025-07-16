@@ -29,7 +29,7 @@ export default function OurTeam() {
             className="bg-cover bg-center h-full w-full bg-[#002768]"
             style={{ backgroundImage: `url(${teambg})` }}
         >
-            <div className="max-w-7xl m-auto px-4 md:px-12 py-18 mb-5">
+            <div className="max-w-7xl m-auto px-4 md:px-12 pt-16 pb-24  mb-5">
                 <div className="flex flex-col justify-center items-center gap-3">
                     <h5 className="flex text-white font-medium gap-2 items-center">
                         <img src={aeroplane2} alt="plane" /> Our Team
