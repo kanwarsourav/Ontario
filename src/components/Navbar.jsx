@@ -178,7 +178,7 @@ export default function Navbar() {
             </li>
             {mobileDropdown === "visas" && (
               <ul className="ml-4 text-sm">
-                <li onClick={handleHamburgerClick}>Work Visa</li>
+                <li onClick={handleHamburgerClick}><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
                 <li onClick={handleHamburgerClick}>Tourist Visa</li>
                 <li onClick={handleHamburgerClick}>Student Visa</li>
                 <li onClick={handleHamburgerClick}>Business Visa</li>
