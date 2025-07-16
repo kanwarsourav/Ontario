@@ -34,6 +34,7 @@ export default function Navbar() {
         setIsOpen(false);
         setIsVisible(false);
         setIsClosing(false);
+        setMobileDropdown(null);
       }, 400);
     } else {
       setIsVisible(true);
@@ -94,7 +95,6 @@ export default function Navbar() {
             <Link to="/about" className="cursor-pointer">About Us</Link>
           </li>
 
-          {/* Hover-based dropdown with link */}
           <li
             className="relative cursor-pointer"
             onMouseEnter={() => setOpenDropdown("visas")}
@@ -111,7 +111,7 @@ export default function Navbar() {
               </Link>
             </div>
             {openDropdown === "visas" && (
-              <ul className="absolute top-full left-0  w-48 bg-white border shadow-md rounded-md py-2 z-50">
+              <ul className="absolute top-full left-0 w-48 bg-white border shadow-md rounded-md py-2 z-50">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Work Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tourist Visa</li>
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Student Visa</li>
@@ -142,7 +142,7 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
-          <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-110 cursor-pointer" />
+          <img src={call} alt="Call" className="hover:scale-110 cursor-pointer transition-transform duration-300" />
           <div>
             <h5 className="text-sm">Call Us Now</h5>
             <h5 className="font-semibold">+91 8699964265</h5>
@@ -156,6 +156,7 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Dropdown Menu */}
       {isVisible && (
         <div
           ref={mobileDropdownRef}
@@ -163,12 +164,12 @@ export default function Navbar() {
             ${isClosing ? 'animate-fadeOutDiagonal' : 'animate-fadeInDiagonal'}`}
         >
           <ul className="flex flex-col gap-4 text-[#002768] font-medium cursor-pointer">
-            <Link to="/" className="cursor-pointer">Home</Link>
+            <Link to="/" onClick={handleHamburgerClick}>Home</Link>
 
-            <Link to="/about" className="cursor-pointer">About Us</Link>
+            <Link to="/about" onClick={handleHamburgerClick}>About Us</Link>
 
             <li onClick={() => toggleMobileDropdown("visas")} className="flex items-center gap-2">
-              <Link to="/ourservices" className="cursor-pointer">Our Services</Link>
+              <span>Our Services</span>
               <img
                 src={arrow}
                 alt=""
@@ -176,11 +177,11 @@ export default function Navbar() {
               />
             </li>
             {mobileDropdown === "visas" && (
-              <ul className="ml-4  text-sm">
-                <li>Work Visa</li>
-                <li>Tourist Visa</li>
-                <li>Student Visa</li>
-                <li>Business Visa</li>
+              <ul className="ml-4 text-sm">
+                <li onClick={handleHamburgerClick}>Work Visa</li>
+                <li onClick={handleHamburgerClick}>Tourist Visa</li>
+                <li onClick={handleHamburgerClick}>Student Visa</li>
+                <li onClick={handleHamburgerClick}>Business Visa</li>
               </ul>
             )}
 
@@ -194,16 +195,16 @@ export default function Navbar() {
             </li>
             {mobileDropdown === "resources" && (
               <ul className="ml-4 space-y-2 text-sm">
-                <li>Resources</li>
-                <li>FAQs</li>
-                <li>Guides</li>
+                <li onClick={handleHamburgerClick}>Resources</li>
+                <li onClick={handleHamburgerClick}>FAQs</li>
+                <li onClick={handleHamburgerClick}>Guides</li>
               </ul>
             )}
 
             <li onClick={handleHamburgerClick}>Our Team</li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
-              <img src={call} alt="Call" className="transform transition-transform duration-300 hover:scale-105" />
+              <img src={call} alt="Call" className="hover:scale-105 transition-transform duration-300" />
               <div>
                 <h5 className="text-sm">Call Us Now</h5>
                 <h5 className="font-semibold text-sm">+91 8699964265</h5>
