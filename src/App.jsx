@@ -11,6 +11,7 @@ import WorkVisa from './components/OurServices/WorkVisa'
 import TouristVisa from './components/OurServices/TouristVisa'
 import StudentVisa from './components/OurServices/StudentVisa'
 import BusinessVisa from './components/OurServices/BusinessVisa'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -21,6 +22,7 @@ function App() {
     <>
 
       <BrowserRouter>
+      <ScrollToTop/>
         <Header />
         <Navbar />
         <Routes>
