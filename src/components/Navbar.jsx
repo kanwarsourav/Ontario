@@ -120,22 +120,12 @@ export default function Navbar() {
             )}
           </li>
 
-          <li className="relative cursor-pointer" onClick={() => toggleDropdown("resources")}>
-            <div className="flex items-center gap-1">
-              Blog
-              <img
-                src={arrow}
-                alt=""
-                className={`transition-transform duration-200 ${openDropdown === "resources" ? "rotate-180" : ""}`}
-              />
-            </div>
-            {openDropdown === "resources" && (
-              <ul className="absolute top-full left-0 mt-2 w-48 bg-white border shadow-md rounded-md py-2 z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Resources</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">FAQs</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Guides</li>
-              </ul>
-            )}
+          <li className="cursor-pointer" >
+            <Link to="/blogs" className="cursor-pointer">
+              <div className="flex items-center gap-1">
+                Blog
+              </div>
+            </Link>
           </li>
 
           <li className="cursor-pointer">Our Team</li>
@@ -186,20 +176,10 @@ export default function Navbar() {
             )}
 
             <li onClick={() => toggleMobileDropdown("resources")} className="flex items-center gap-2">
-              <span>Blog</span>
-              <img
-                src={arrow}
-                alt=""
-                className={`transition-transform duration-200 ${mobileDropdown === "resources" ? "rotate-180" : ""}`}
-              />
+              <Link to="/blogs" onClick={handleHamburgerClick} className="cursor-pointer">Blogs</Link>
+              
             </li>
-            {mobileDropdown === "resources" && (
-              <ul className="ml-4 space-y-2 text-sm">
-                <li onClick={handleHamburgerClick}>Resources</li>
-                <li onClick={handleHamburgerClick}>FAQs</li>
-                <li onClick={handleHamburgerClick}>Guides</li>
-              </ul>
-            )}
+            
 
             <li onClick={handleHamburgerClick}>Our Team</li>
 
