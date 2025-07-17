@@ -30,9 +30,11 @@ export default function HelpClient() {
                                 A visa is a conditional permission provided by a region to a foreigner to entry.
                             </p>
                             <div className="flex">
+                                <Link to="/workvisa" className="cursor-pointer">
                                 <div className="flex text-white py-1 px-6 mt-4 text-sm rounded-4xl bg-[#002768] hover:bg-[#E64E37] cursor-pointer">
                                     Read More
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -45,9 +47,11 @@ export default function HelpClient() {
                                 A visa is a conditional permission provided by a region to a foreigner to entry.
                             </p>
                             <div className="flex">
+                                <Link to="/touristvisa" className="cursor-pointer">
                                 <div className="flex text-white py-1 px-6 mt-4 text-sm rounded-4xl bg-[#002768] hover:bg-[#E64E37] cursor-pointer">
                                     Read More
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -60,9 +64,11 @@ export default function HelpClient() {
                                 A visa is a conditional permission provided by a region to a foreigner to entry.
                             </p>
                             <div className="flex">
+                                <Link to="/studentvisa" className="cursor-pointer">
                                 <div className="flex text-white py-1 px-6 mt-4 text-sm rounded-4xl bg-[#002768] hover:bg-[#E64E37] cursor-pointer">
                                     Read More
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -75,9 +81,11 @@ export default function HelpClient() {
                                 A visa is a conditional permission provided by a region to a foreigner to entry.
                             </p>
                             <div className="flex">
+                                <Link to="/businessvisa" className="cursor-pointer">
                                 <div className="flex text-white py-1 px-6 mt-4 text-sm rounded-4xl bg-[#002768] hover:bg-[#E64E37] cursor-pointer">
                                     Read More
                                 </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
