@@ -113,9 +113,9 @@ export default function Navbar() {
             {openDropdown === "visas" && (
               <ul className="absolute top-full left-0 w-48 bg-white border shadow-md rounded-md py-2 z-50">
                 <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Tourist Visa</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Student Visa</li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Business Visa</li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/touristvisa" className="cursor-pointer">Tourist Visa</Link></li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/studentvisa" className="cursor-pointer">Student Visa</Link></li>
+                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/businessvisa" className="cursor-pointer">Business Visa</Link></li>
               </ul>
             )}
           </li>
@@ -179,9 +179,9 @@ export default function Navbar() {
             {mobileDropdown === "visas" && (
               <ul className="ml-4 text-sm">
                 <li onClick={handleHamburgerClick}><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
-                <li onClick={handleHamburgerClick}>Tourist Visa</li>
-                <li onClick={handleHamburgerClick}>Student Visa</li>
-                <li onClick={handleHamburgerClick}>Business Visa</li>
+                <li onClick={handleHamburgerClick}><Link to="/touristvisa" className="cursor-pointer">Tourist Visa</Link></li>
+                <li onClick={handleHamburgerClick}><Link to="/studentvisa" className="cursor-pointer">Student Visa</Link></li>
+                <li onClick={handleHamburgerClick}><Link to="/businessvisa" className="cursor-pointer">Business Visa</Link></li>
               </ul>
             )}
 

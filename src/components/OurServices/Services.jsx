@@ -37,10 +37,12 @@ export default function Services() {
                             <FaSuitcase size={20} />
                         </div>
                     </div>
-                    <div className="p-4 pt-0">
-                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold">
-                           <Link to="/workvisa" >Read More</Link>
+                    <div className="p-4 pt-0  ">
+                        <Link to="/workvisa" >
+                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
+                           Read More
                         </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -61,9 +63,11 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold">
-                            Read More
+                       <Link to="/touristvisa" >
+                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
+                           Read More
                         </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -84,9 +88,11 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold">
-                            Read More
+                       <Link to="/studentvisa" >
+                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
+                           Read More
                         </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -107,9 +113,11 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold">
-                            Read More
+                        <Link to="/businessvisa" >
+                        <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
+                           Read More
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -8,6 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from './components/AboutUs'
 import OurServices from './components/OurServices'
 import WorkVisa from './components/OurServices/WorkVisa'
+import TouristVisa from './components/OurServices/TouristVisa'
+import StudentVisa from './components/OurServices/StudentVisa'
+import BusinessVisa from './components/OurServices/BusinessVisa'
 
 
 
@@ -25,6 +28,9 @@ function App() {
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/ourservices" element={<OurServices/>} />
           <Route path="/workvisa" element={<WorkVisa/>} />
+          <Route path="/touristvisa" element={<TouristVisa/>} />
+          <Route path="/studentvisa" element={<StudentVisa/>} />
+          <Route path="/businessvisa" element={<BusinessVisa/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
