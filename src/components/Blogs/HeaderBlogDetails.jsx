@@ -11,9 +11,6 @@ export default function HeaderBlogDetails() {
                 <h2 className='flex justify-center items-center font-bold text-5xl text-white'>Blog Details</h2>
                 <h5 className='flex justify-center items-center font-bold text-sm text-white'>HOME | Blog Details</h5>
             </div >
-
-            
-            
         </>
     )
 }
