@@ -13,6 +13,7 @@ import StudentVisa from './components/OurServices/StudentVisa'
 import BusinessVisa from './components/OurServices/BusinessVisa'
 import ScrollToTop from './components/ScrollToTop'
 import Blogs from './components/Blogs'
+import BlogDetails from './components/Blogs/BlogDetails'
 
 
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/studentvisa" element={<StudentVisa/>} />
           <Route path="/businessvisa" element={<BusinessVisa/>} />
           <Route path="/blogs" element={<Blogs/>} />
+          <Route path="/blogdetails" element={<BlogDetails/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

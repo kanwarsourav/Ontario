@@ -45,20 +45,7 @@ export default function Footer() {
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('About Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
-              <li onClick={() => setActiveLink('Our Team')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
-                <img src={orangeaeroplane} alt="" />
-                <span className="relative group cursor-pointer">
-                  Our Team
-                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Our Team') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
-                </span>
-              </li>
-              <li onClick={() => setActiveLink('Contact Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
-                <img src={orangeaeroplane} alt="" />
-                <span className="relative group cursor-pointer">
-                  Contact Us
-                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Contact Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
-                </span>
-              </li>
+              
               <li onClick={() => setActiveLink('Blogs')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
@@ -66,6 +53,15 @@ export default function Footer() {
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Blogs') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
+
+              <li onClick={() => setActiveLink('Contact Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
+                <img src={orangeaeroplane} alt="" />
+                <span className="relative group cursor-pointer">
+                  Contact Us
+                  <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Contact Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+                </span>
+              </li>
+              
             </ul>
           </div>
 
@@ -76,28 +72,28 @@ export default function Footer() {
               <li onClick={() => setActiveLink('Work Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
-                  Work Visa
+                 <Link to="/workvisa" className="cursor-pointer">Work Visa</Link> 
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Work Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
               <li onClick={() => setActiveLink('Tourist Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
-                  Tourist Visa
+                  <Link to="/touristvisa" className="cursor-pointer">Tourist Visa</Link>
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Tourist Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
               <li onClick={() => setActiveLink('Student Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
-                  Student Visa
+                  <Link to="/studentvisa" className="cursor-pointer">Student Visa</Link>
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Student Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
               <li onClick={() => setActiveLink('Business Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
-                  Business Visa
+                  <Link to="/businessvisa" className="cursor-pointer">Business Visa</Link>
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Business Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
