@@ -57,7 +57,7 @@ export default function Footer() {
               <li onClick={() => setActiveLink('Contact Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group cursor-pointer">
-                  Contact Us
+                  <Link to="/contactus" className="cursor-pointer">Contact Us</Link>
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Contact Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>

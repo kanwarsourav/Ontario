@@ -128,7 +128,11 @@ export default function Navbar() {
             </Link>
           </li>
 
-          <li className="cursor-pointer">Contact Us</li>
+          <li className="cursor-pointer">
+            <Link to="/contactus" className="cursor-pointer">
+            Contact Us
+            </Link>
+            </li>
         </ul>
 
         <div className="hidden md:flex items-center gap-2 text-[#002768]">
@@ -181,7 +185,9 @@ export default function Navbar() {
             </li>
             
 
-            <li onClick={handleHamburgerClick}>Contact Us</li>
+            <li>
+              <Link to="/contactus" onClick={handleHamburgerClick} className="cursor-pointer">Contact Us
+              </Link></li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
               <img src={call} alt="Call" className="hover:scale-105 transition-transform duration-300" />

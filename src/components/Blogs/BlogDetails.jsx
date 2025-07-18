@@ -6,8 +6,8 @@ import calender from '../../assets/images/calender.svg';
 import tick from '../../assets/images/tick.svg';
 import thumbsup from '../../assets/images/thumbsup.svg';
 import meeting from '../../assets/images/meeting.svg';
-import searchIcon from '../../assets/images/searchicon.svg'; // 🔍 Add your search icon path here
-import doe from '../../assets/images/doe.svg'; // 🔍 Add your search icon path here
+import searchIcon from '../../assets/images/searchicon.svg';
+import doe from '../../assets/images/doe.svg';
 
 export default function BlogDetails() {
     return (
@@ -15,9 +15,9 @@ export default function BlogDetails() {
             <HeaderBlogDetails />
 
             <div>
-                <div className='max-w-7xl mx-auto px-4 md:px-12 py-10 flex justify-between gap-6'>
-                    {/* LEFT CONTENT - 67% */}
-                    <div className='w-[67%]'>
+                <div className='max-w-7xl mx-auto px-4 md:px-12 py-10 flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-6'>
+                    {/* LEFT CONTENT */}
+                    <div className='w-full md:w-[67%] flex flex-col items-center md:items-start'>
                         <div>
                             <img src={smiling} alt="" />
                         </div>
@@ -26,10 +26,10 @@ export default function BlogDetails() {
                             <h6 className='flex text-[#E64E37] gap-2'><img src={calender} alt="" />July 11, 2025</h6>
                         </div>
                         <div>
-                            <h2 className='font-bold text-[38px] w-[90%] leading-none pt-4 text-[#002768]'>
+                            <h2 className='font-bold text-[28px] md:text-[38px] w-full md:w-[90%] leading-none pt-4 text-[#002768] text-center md:text-left'>
                                 How to be selected in the top ranked university fro all over United Kingdom
                             </h2>
-                            <div className='flex flex-col gap-3 pt-4 text-sm text-[#002768]'>
+                            <div className='flex flex-col gap-3 pt-4 text-sm text-[#002768] text-center md:text-left'>
                                 <p>
                                     Our business consulting programs helps to break the performance of your business down into customers
                                     and product groups so you know exactly which customers or product groups are working and which ones aren’t
@@ -49,22 +49,22 @@ export default function BlogDetails() {
                             </div>
 
                             <div>
-                                <h3 className='font-semibold text-[34px] text-[#002768] pt-5'>The Ontario Values</h3>
-                                <p className='text-[#002768] text-sm'>At The Ontario our culture comes to life through three core values:</p>
-                                <ul className='flex flex-col gap-2 pt-3 text-[#002768]'>
-                                    <li className='flex gap-2 text-sm'><img src={tick} alt="" />We seize opportunities to innovate and grow</li>
-                                    <li className='flex gap-2 text-sm'><img src={tick} alt="" />We are one firm with a shared sense of purpose</li>
-                                    <li className='flex gap-2 text-sm'><img src={tick} alt="" />We care about each other and the world around us</li>
+                                <h3 className='font-semibold text-[26px] md:text-[34px] text-[#002768] pt-5 text-center md:text-left'>The Ontario Values</h3>
+                                <p className='text-[#002768] text-sm text-center md:text-left'>At The Ontario our culture comes to life through three core values:</p>
+                                <ul className='flex flex-col gap-2 pt-3 text-[#002768] text-sm'>
+                                    <li className='flex gap-2'><img src={tick} alt="" />We seize opportunities to innovate and grow</li>
+                                    <li className='flex gap-2'><img src={tick} alt="" />We are one firm with a shared sense of purpose</li>
+                                    <li className='flex gap-2'><img src={tick} alt="" />We care about each other and the world around us</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div className='flex pt-5'>
-                            <div><img src={thumbsup} alt="" className='w-[90%]' /></div>
-                            <div><img src={meeting} alt="" className='w-[90%]' /></div>
+                        <div className='flex pt-5 flex-col md:flex-row gap-4'>
+                            <div><img src={thumbsup} alt="" className='w-full md:w-[90%]' /></div>
+                            <div><img src={meeting} alt="" className='w-full md:w-[90%]' /></div>
                         </div>
 
-                        <div className='pt-4 text-[#002768] text-sm w-[90%] flex flex-col gap-2'>
+                        <div className='pt-4 text-[#002768] text-sm w-full md:w-[90%] flex flex-col gap-2 text-center md:text-left'>
                             <p>
                                 We guide our clients through difficult issues, bringing our insight and judgment to each situation.
                                 Our innovative approaches create original solutions to our clients' most complex domestic
@@ -77,7 +77,7 @@ export default function BlogDetails() {
                             </p>
                         </div>
 
-                        <div className='flex gap-2 pt-5 text-[#002768] flex-wrap'>
+                        <div className='flex gap-2 pt-5 text-[#002768] flex-wrap justify-center md:justify-start'>
                             <h5>Share</h5>
                             <span>:</span>
                             <h5 className='border px-2 rounded-xl'>Facebook</h5>
@@ -88,10 +88,10 @@ export default function BlogDetails() {
                         </div>
                     </div>
 
-                    {/* RIGHT SIDEBAR - 27% */}
-                    <div className='w-[27%] flex flex-col gap-8'>
+                    {/* RIGHT SIDEBAR */}
+                    <div className='w-full md:w-[27%] flex flex-col gap-8 items-center md:items-start'>
                         {/* SEARCH BAR */}
-                        <div className='relative'>
+                        <div className='relative w-full'>
                             <input
                                 type='text'
                                 placeholder='Search'
@@ -101,20 +101,21 @@ export default function BlogDetails() {
                                 <img src={searchIcon} alt="Search" className='w-4 h-4' />
                             </button>
                         </div>
+
                         {/* COMMENT SECTION */}
-                        <div className='bg-white rounded-xl shadow p-4'>
-                            <h3 className='text-[#002768] font-bold text-xl mb-4'>Make A Comments</h3>
+                        <div className='bg-white rounded-xl shadow p-4 w-full'>
+                            <h3 className='text-[#002768] font-bold text-xl mb-4 text-center'>Make A Comments</h3>
                             <form className='flex flex-col gap-3'>
-                                <div className='flex gap-3'>
+                                <div className='flex flex-col sm:flex-row gap-3'>
                                     <input
                                         type="text"
                                         placeholder="Name*"
-                                        className="w-1/2 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
+                                        className="w-full sm:w-1/2 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
                                     />
                                     <input
                                         type="email"
                                         placeholder="Email*"
-                                        className="w-1/2 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
+                                        className="w-full sm:w-1/2 px-4 py-2 rounded-full border border-gray-300 focus:outline-none"
                                     />
                                 </div>
                                 <textarea
@@ -129,7 +130,6 @@ export default function BlogDetails() {
                                 </button>
                             </form>
 
-                            {/* Comments List */}
                             {/* Comments List */}
                             <div className='mt-5 max-h-52 overflow-y-auto flex flex-col gap-3 pr-1'>
                                 {/* Comment 1 */}
@@ -168,7 +168,59 @@ export default function BlogDetails() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
+                        {/* RECENT POST SECTION */}
+                        <div className="bg-white rounded-xl shadow p-4 w-full">
+                            <h3 className="text-[#002768] font-bold text-xl mb-4">Recent Post</h3>
+                            <div className="flex flex-col gap-4">
+
+                                {/* Post 1 */}
+                                <div className="flex gap-3 items-start border-b pb-3">
+                                    <img
+                                        src="https://via.placeholder.com/80x60" // Replace with actual thumbnail
+                                        alt="Post Thumbnail"
+                                        className="w-20 h-16 object-cover rounded-md"
+                                    />
+                                    <div className="flex flex-col justify-center text-sm text-[#002768]">
+                                        <p className="font-semibold leading-snug">
+                                            How consultation in business is affecting new ventures
+                                        </p>
+                                        <span className="text-[#E64E37] text-xs pt-1">January 11, 2023</span>
+                                    </div>
+                                </div>
+
+                                {/* Post 2 */}
+                                <div className="flex gap-3 items-start border-b pb-3">
+                                    <img
+                                        src="https://via.placeholder.com/80x60"
+                                        alt="Post Thumbnail"
+                                        className="w-20 h-16 object-cover rounded-md"
+                                    />
+                                    <div className="flex flex-col justify-center text-sm text-[#002768]">
+                                        <p className="font-semibold leading-snug">
+                                            How consultation in business is affecting new ventures
+                                        </p>
+                                        <span className="text-[#E64E37] text-xs pt-1">January 11, 2023</span>
+                                    </div>
+                                </div>
+
+                                {/* Post 3 */}
+                                <div className="flex gap-3 items-start pb-3">
+                                    <img
+                                        src="https://via.placeholder.com/80x60"
+                                        alt="Post Thumbnail"
+                                        className="w-20 h-16 object-cover rounded-md"
+                                    />
+                                    <div className="flex flex-col justify-center text-sm text-[#002768]">
+                                        <p className="font-semibold leading-snug">
+                                            How consultation in business is affecting new ventures
+                                        </p>
+                                        <span className="text-[#E64E37] text-xs pt-1">January 11, 2023</span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
