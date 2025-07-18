@@ -41,27 +41,27 @@ export default function TouristVisa() {
                 className='bg-cover bg-center h-40 w-full bg-[#002768] flex flex-col justify-center items-center text-center'
                 style={{ backgroundImage: `url(${aboutusbg})` }}
             >
-                <h2 className='font-bold text-4xl md:text-5xl text-white'>Tourist Visa Processing</h2>
+                <h2 className='font-bold text-4xl md:text-5xl text-white'>Tourist visa Processing</h2>
                 <h5 className='font-bold text-sm text-white'>HOME | Tourist Visa Processing</h5>
             </div>
 
             {/* Main Section */}
             <div>
-                <div className='max-w-7xl mx-auto px-4 md:px-14 py-10 flex flex-wrap md:flex-nowrap justify-center md:justify-between items-center md:items-start gap-6'>
+                <div className='max-w-7xl px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
 
                     {/* Sidebar */}
-                    <div className='w-full md:w-[27%] flex flex-col gap-4 items-center md:items-start text-center md:text-left'>
+                    <div className='w-full  lg:w-[27%] flex flex-col md:flex-row lg:flex-col  gap-4 items-center md:items-start text-center md:text-left'>
                         <div className='flex flex-col gap-3 w-full'>
                             <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
                                 <img src={work} alt="" />Work Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center bg-[#EF5533] py-1 px-4 rounded-lg text-white shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center bg-[#EF5533] py-1 px-4 rounded-lg text-white   shadow-lg justify-center md:justify-start'>
                                 <img src={tourist} alt="" />Tourist Visa Processing
                             </h5>
                             <h5 className='flex gap-2 items-center py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
                                 <img src={visastudent} alt="" />Student Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
                                 <img src={businessvisa} alt="" />Business Visa Processing
                             </h5>
                         </div>
@@ -90,9 +90,9 @@ export default function TouristVisa() {
                     </div>
 
                     {/* Content Area */}
-                    <div className='w-full md:w-[67%] flex flex-col items-center md:items-start text-center md:text-left'>
+                    <div className='w-full lg:w-[67%] flex flex-col items-center md:items-start text-center md:text-left'>
                         <div>
-                            <h2 className='font-bold text-[30px] md:text-[42px] text-[#002768]'>Tourist Visa Processing</h2>
+                            <h2 className='font-bold text-[30px] md:text-[42px] text-[#002768]'>Business Visa Processing</h2>
                             <p className='text-[#002768] text-sm w-full md:w-[80%] mb-2'>
                                 We guide our clients through difficult issues, bringing insight and judgment to each situation. Our
                                 innovat ive approaches create original solutions to our clients' most complex domestic & multi
@@ -158,9 +158,9 @@ export default function TouristVisa() {
                             <div className='pt-3 w-full md:w-[90%]'>
                                 <img src={document} alt="" />
                             </div>
-                            <div className='flex flex-wrap lg:flex-nowrap justify-center gap-6 pt-8'>
+                            <div className='flex flex-wrap md:flex-nowrap md:justify-between justify-center gap-2 pt-8'>
                                 <div className='flex flex-col justify-center items-center md:items-start gap-2'>
-                                    <div className='flex justify-center gap-4  w-[70%] '>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%] '>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             1
                                         </div>
@@ -170,7 +170,7 @@ export default function TouristVisa() {
                                         </div>
                                     </div>
 
-                                    <div className='flex justify-center gap-4 w-[70%]'>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%]'>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             2
                                         </div>
@@ -180,7 +180,7 @@ export default function TouristVisa() {
                                         </div>
                                     </div>
 
-                                    <div className='flex justify-center gap-4 w-[70%] '>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%] '>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             3
                                         </div>
@@ -191,7 +191,7 @@ export default function TouristVisa() {
                                     </div>
                                 </div>
                                 <div className='flex flex-col justify-center items-center md:items-start gap-2'>
-                                    <div className='flex justify-center gap-4 w-[70%]'>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%]'>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             4
                                         </div>
@@ -201,7 +201,7 @@ export default function TouristVisa() {
                                         </div>
                                     </div>
 
-                                    <div className='flex justify-center gap-4 w-[70%]'>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%]'>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             5
                                         </div>
@@ -211,7 +211,7 @@ export default function TouristVisa() {
                                         </div>
                                     </div>
 
-                                    <div className='flex justify-center gap-4 w-[70%]'>
+                                    <div className='flex justify-center gap-4 w-[85%] lg:w-[70%]'>
                                         <div className='rounded-full shadow-md flex justify-center items-center w-25 h-10 bg-white text-[#EF5533] font-medium'>
                                             6
                                         </div>

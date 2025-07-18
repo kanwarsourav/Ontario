@@ -12,11 +12,11 @@ import support from '../../assets/images/support.svg';
 
 export default function WhyChooseUs() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-20 py-10">
-            <div className="flex flex-wrap gap-12 justify-center md:justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4  lg:px-10 xl:px-16 2xl:px-20 py-10">
+            <div className="flex flex-wrap gap-12 justify-center lg:justify-between items-center">
 
                 {/* LEFT: Rating Card */}
-                <div className="relative w-[90%] md:w-[50%] lg:w-[40%] xl:w-[38%] flex justify-center md:justify-start">
+                <div className="relative  md:w-[50%] lg:w-[40%] xl:w-[38%] flex justify-center items-center lg:justify-start">
                     <div
                         className="relative rounded-2xl overflow-hidden shadow-lg pt-8 pb-20 px-6 text-white flex flex-col items-start bg-cover bg-center w-full max-w-[400px] min-h-[480px]"
                         style={{ backgroundImage: `url(${consultbg})` }}
@@ -76,7 +76,7 @@ export default function WhyChooseUs() {
                 </div>
 
                 {/* RIGHT: Features Section */}
-                <div className="w-full md:w-[50%] lg:w-[48%] flex flex-col items-center gap-6 text-center md:text-left">
+                <div className="w-full md:w-[80%] lg:w-[48%] flex flex-col items-center gap-6 text-center md:text-left">
                     <div className="flex flex-col gap-2 pb-3 items-center md:items-start">
                         <h5 className="flex text-[#E64E37] justify-center items-center gap-2 font-medium">
                             <img src={aeroplane} alt="Aeroplane" className="w-5 h-5" />

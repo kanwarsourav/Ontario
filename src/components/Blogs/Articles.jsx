@@ -10,7 +10,7 @@ export default function Articles() {
         <>
             <div>
                 <div className='max-w-7xl mx-auto px-4 md:px-12 py-20 flex flex-col flex-wrap lg:flex-nowrap gap-y-5'>
-                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 md:gap-20 '>
+                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 lg:gap-20 '>
                         <div className='flex flex-col justify-center cursor-pointer transform transition-transform duration-300 hover:scale-105 '>
                             <Link to="/blogdetails" className="cursor-pointer">
                                 <div className='flex  '>
@@ -46,7 +46,7 @@ export default function Articles() {
                         </div>
 
                     </div>
-                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 md:gap-20 '>
+                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 lg:gap-20 '>
                         <div className='flex flex-col justify-center cursor-pointer transform transition-transform duration-300 hover:scale-105 '>
                             <Link to="/blogdetails" className="cursor-pointer">
                                 <div className='flex  '>

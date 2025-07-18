@@ -18,7 +18,7 @@ export default function Blogs() {
                             News & Updates
                         </h2>
                     </div>
-                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 md:gap-20 '>
+                    <div className='flex justify-center items-center flex-wrap mx-auto md:flex-nowrap  gap-5 lg:gap-20 '>
                         <div className='flex flex-col justify-center cursor-pointer transform transition-transform duration-300 hover:scale-105 '>
                             <Link to="/blogdetails" className="cursor-pointer">
                                 <div className='flex  '>

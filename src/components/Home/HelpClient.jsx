@@ -21,8 +21,8 @@ export default function HelpClient() {
                         </h2>
                     </div>
 
-                    <div className="flex flex-wrap justify-center  lg:justify-between gap-y-6 pb-6 mx-8 md:mx-0  mt-4  ">
-                        <div className=" lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
+                    <div className="flex flex-wrap md:gap-4 lg:gap-0 lg:flex-nowrap justify-center  lg:justify-between gap-y-6 pb-6 mx-8 md:mx-0  mt-4  ">
+                        <div className=" md:w-[45%] lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
                             <div className="w-8 mb-2">
                                 <img src={laptop} alt="Laptop Working" />
                             </div>
@@ -39,7 +39,7 @@ export default function HelpClient() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[21%] bg-[#FDF2F0] flex justify-center items-start p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
+                        <div className="md:w-[45%]  lg:w-[21%] bg-[#FDF2F0] flex justify-center items-start p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
                             <div className="w-8 mb-2">
                                 <img src={aeroplane1} alt="Aeroplane Icon" />
                             </div>
@@ -56,7 +56,7 @@ export default function HelpClient() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
+                        <div className="md:w-[45%] lg:w-[21%] bg-[#F0F2F6] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
                             <div className="w-8 mb-2">
                                 <img src={student} alt="Student Icon" />
                             </div>
@@ -73,7 +73,7 @@ export default function HelpClient() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[21%] bg-[#FDF2F0] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
+                        <div className="md:w-[45%] lg:w-[21%] bg-[#FDF2F0] flex justify-center p-5 pt-8 rounded-2xl flex-col transform transition-transform duration-300 hover:scale-105">
                             <div className="w-8 mb-2">
                                 <img src={business} alt="Business Icon" />
                             </div>

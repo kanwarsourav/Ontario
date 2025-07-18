@@ -24,7 +24,7 @@ export default function Footer() {
             <div>
             <img src={logo} alt="Logo" />
             </div>
-            <p className="text-white w-[75%]">
+            <p className="text-white w-[75%] md:w-[50%] lg:w-[75%]">
               Open doors to international opportunities and grow your career without borders.
             </p>
             <div className="flex gap-4">

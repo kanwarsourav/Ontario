@@ -1,24 +1,22 @@
 import React from 'react';
-import trusted from '../../assets/images/trustedcustomer.svg';
-import grouppeople from '../../assets/images/grouppeople.svg';   
+import trusted from '../../assets/images/trustedcustomer.svg';      // Main image (woman)
+import grouppeople from '../../assets/images/grouppeople.svg';      // Bottom-right image
 import aeroplane from '../../assets/images/aeroplane.svg';
 import list from '../../assets/images/list.svg';
 import threeperson from '../../assets/images/3person.svg';
-import companybg from '../../assets/images/companybg.svg';
 
 export default function OurCompany() {
   return (
-    <div className=' bg-cover bg-center h-full w-full bg-[#002768] '
-                    style={{ backgroundImage: `url(${companybg})` }}>
-      <div className="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-24">
+    <div>
+      <div className="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap justify-between items-center py-12">
         
         {/* LEFT: IMAGES */}
         <div className="relative flex items-center justify-center md:w-[50%] pt-5">
           {/* Main Image */}
-          <img src={trusted} alt="Trusted" className="w-[60%] md:w-[75%] rounded-xl" />
+          <img src={trusted} alt="Trusted" className="w-[80%] md:w-[75%] rounded-xl" />
 
           {/* Overlapping Image (Bottom Right) */}
-          <div className="absolute bottom-[-20px] right-[10px] md:bottom-[-30px] md:right-[10px] w-52 h-36 md:w-80 md:h-64 bg-white rounded-4xl overflow-hidden border-4 border-white shadow-xl z-10">
+          <div className="absolute bottom-[-20px] right-[10px] md:bottom-[-30px] md:right-[10px] w-52 h-36 md:w-40 md:h-40 lg:w-80 lg:h-64 bg-white rounded-4xl overflow-hidden border-4 border-white shadow-xl z-10">
             <img
               src={grouppeople}
               alt="People"
@@ -44,14 +42,14 @@ export default function OurCompany() {
         </div>
 
         {/* RIGHT: TEXT */}
-        <div className="flex flex-col gap-3 justify-center items-start md:w-[45%] mt-6 md:mt-0">
+        <div className="flex flex-col gap-3 justify-center items-start md:w-[45%]  mt-6 md:mt-0">
           <h5 className="flex text-[#E64E37] font-medium gap-2 items-center">
             <img src={aeroplane} alt="plane" /> Our Company
           </h5>
-          <h2 className="text-[32px] md:text-[40px] font-bold text-[#002768] md:w-[80%] leading-tight">
+          <h2 className="text-[32px] md:text-[40px] font-bold text-[#002768] lg:w-[80%] leading-tight">
             Not Just Visas We Build International Careers
           </h2>
-          <p className="md:w-[70%] text-[#002768]">
+          <p className="lg:w-[70%] text-[#002768]">
             We don’t just help you get a visa — we guide you toward the right job, the right country, and the right future.
           </p>
            <ul class="flex flex-col mt-3">
@@ -70,8 +68,8 @@ export default function OurCompany() {
                             </ul>
                         </ul>
           <div className="mt-4">
-            <button className="bg-[#E64E37] text-white py-2 px-10 rounded-full hover:scale-105 transition-transform">
-              Watch a Video
+            <button className="bg-[#E64E37] text-white py-2 px-10 rounded-full hover:scale-105 transition-transform cursor-pointer">
+              Learn More
             </button>
           </div>
         </div>

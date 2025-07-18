@@ -22,7 +22,7 @@ export default function Enquirys() {
                         </div>
                         <div><img src={calling} alt="" className='w-[100%] lg:w-[90%] mt-4' /></div>
                     </div>
-                    <div className='lg:w-[50%] flex justify-center items-center'>
+                    <div className='w-full   lg:w-[50%] flex justify-center items-center'>
                         <div className='bg-white p-8 rounded-2xl shadow-lg '>
                             <h3 className='text-[26px] sm:text-[35px] font-bold text-[#002768] pb-2'>Get free assessment today!</h3>
                             <div className='flex flex-col gap-3'>

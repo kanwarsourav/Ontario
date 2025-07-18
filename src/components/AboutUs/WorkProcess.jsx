@@ -21,28 +21,28 @@ export default function WorkProcess() {
                     </h2>
                 </div>
                 <div className='flex justify-center md:justify-between items-center flex-wrap md:flex-nowrap gap-4 md:gap-0'>
-                    <div className='md:w-[30%] flex justify-center flex-col items-center gap-2'>
+                    <div className='lg:w-[30%] flex justify-center flex-col items-center gap-2'>
                         <div>
                             <img src={one} alt="" />
                         </div>
                         <div className='flex text-white font-semibold bg-[#002768] px-8 rounded-2xl text-sm '>Step 1</div>
-                        <h4 className='font-bold text-xl text-[#002768]'>IELTS Preparation and Scoring</h4>
+                        <h4 className='w-[80%] text-center font-bold text-xl text-[#002768]'>IELTS Preparation and Scoring</h4>
                         <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
-                    <div className='md:w-[30%] flex justify-center flex-col items-center gap-2'>
+                    <div className='lg:w-[30%] flex justify-center flex-col items-center gap-2'>
                         <div>
                             <img src={two} alt="" />
                         </div>
                         <div className='flex text-white font-semibold bg-[#E64E37] px-8 rounded-2xl text-sm '>Step 2</div>
-                        <h4 className='font-bold text-xl text-[#E64E37]'>IELTS Preparation and Scoring</h4>
+                        <h4 className='w-[80%] text-center font-bold text-xl text-[#E64E37]'>IELTS Preparation and Scoring</h4>
                         <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
-                    <div className='md:w-[30%] flex justify-center flex-col items-center gap-2'>
+                    <div className='lg:w-[30%] flex justify-center flex-col items-center gap-2'>
                         <div>
                             <img src={one} alt="" />
                         </div>
                         <div className='flex text-white font-semibold bg-[#002768] px-8 rounded-2xl text-sm '>Step 3</div>
-                        <h4 className='font-bold text-xl text-[#002768]'>Assessment & Visa Submission</h4>
+                        <h4 className='w-[80%] text-center font-bold text-xl text-[#002768]'>Assessment & Visa Submission</h4>
                         <p className='w-[80%] text-center text-[#002768]'>We have years of experience and a team of experts in IT services who are dedicated to providing you with top-notch service.</p>
                     </div>
                 </div>

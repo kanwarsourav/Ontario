@@ -40,11 +40,11 @@ export default function OurTeam() {
                 </div>
 
                 {/* Team Members */}
-                <div className="flex justify-center md:justify-between pt-10 flex-wrap gap-4 md:gap-0">
+                <div className="flex justify-center  md:justify-between pt-10 flex-wrap  gap-4 lg:gap-0   ">
                     {teamMembers.map((member, index) => (
                         <div
                             key={index}
-                            className="relative md:w-[24%] w-[80%] mx-auto md:mx-0 cursor-pointer group rounded-lg overflow-hidden"
+                            className="relative    md:mx-0 cursor-pointer group rounded-lg overflow-hidden"
                             onClick={() => handleCardClick(index)}
                         >
                             <img

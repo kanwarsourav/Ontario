@@ -82,7 +82,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between md:justify-center gap-8 lg:gap-0 lg:justify-between items-center">
 
         <Link to="/" className="cursor-pointer">
           <img src={logo} alt="Logo" />
@@ -135,7 +135,7 @@ export default function Navbar() {
             </li>
         </ul>
 
-        <div className="hidden md:flex items-center gap-2 text-[#002768]">
+        <div className="hidden lg:flex items-center gap-2 text-[#002768]">
           <img src={call} alt="Call" className="hover:scale-110 cursor-pointer transition-transform duration-300" />
           <div>
             <h5 className="text-sm">Call Us Now</h5>
