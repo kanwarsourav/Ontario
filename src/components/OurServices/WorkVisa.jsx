@@ -47,11 +47,11 @@ export default function WorkVisa() {
 
             {/* Main Section */}
             <div>
-                <div className='max-w-7xl px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
+               <div className='max-w-7xl px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
 
                     {/* Sidebar */}
-                    <div className='w-full  lg:w-[27%] flex flex-col md:flex-row lg:flex-col  gap-4 items-center md:items-start text-center md:text-left'>
-                        <div className='flex flex-col gap-3 w-full'>
+                    <div className='w-full  lg:w-[27%] flex flex-col   gap-4 items-center lg:items-start text-center md:text-left'>
+                        <div className='flex flex-col gap-3 w-full md:w-[70%] lg:w-full'>
                             <h5 className='flex gap-2 items-center bg-[#EF5533] py-1 px-4 rounded-lg text-white shadow-lg justify-center md:justify-start'>
                                 <img src={work} alt="" />Work Visa Processing
                             </h5>
@@ -61,7 +61,7 @@ export default function WorkVisa() {
                             <h5 className='flex gap-2 items-center py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
                                 <img src={visastudent} alt="" />Student Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg  text-[#00276 shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg  text-[#002768] shadow-lg justify-center md:justify-start'>
                                 <img src={businessvisa} alt="" />Business Visa Processing
                             </h5>
                         </div>
