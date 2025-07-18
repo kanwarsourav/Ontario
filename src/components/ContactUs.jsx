@@ -13,14 +13,14 @@ export default function ContactUs() {
       <div className="max-w-7xl mx-auto px-4 md:px-14 py-10">
 
         {/* TOP CONTACT BOXES */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-1 lg:gap-6 mb-12">
+          <div className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center">
             <img src={mailIcon} alt="Mail Icon" className="w-12 h-12 mb-4 bg-[#E64E37] rounded-3xl p-2" />
             <h4 className="text-[#002768] font-semibold text-lg mb-2">Send Us Mail</h4>
-            <p className="text-sm text-gray-700">theontariooverseasvisa@gmail.com</p>
-            <p className="text-sm text-gray-700">theontariooverseasvisa@gmail.com</p>
+            <p className="text-sm mx-5 text-gray-700">theontariooverseasvisa@gmail.com</p>
+            <p className="text-sm mx-2 text-gray-700">theontariooverseasvisa@gmail.com</p>
           </div>
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center">
+          <div className="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center">
             <img src={callIcon} alt="Call Icon" className="w-12 h-12 mb-4" />
             <h4 className="text-[#002768] font-semibold text-lg mb-2">Call Us Anytime</h4>
             <p className="text-sm text-gray-700">+91 8699964265</p>

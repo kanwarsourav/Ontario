@@ -34,7 +34,7 @@ export default function OurTeam() {
                     <h5 className="flex text-white font-medium gap-2 items-center">
                         <img src={aeroplane2} alt="plane" /> Our Team
                     </h5>
-                    <h2 className="text-[40px] font-bold text-white leading-none flex justify-center items-center text-center md:w-[40%]">
+                    <h2 className="text-[40px] font-bold text-white leading-none flex justify-center items-center text-center md:w-[60%] lg:w-[40%]">
                         Get Your Required Services from Our Team
                     </h2>
                 </div>

@@ -16,9 +16,9 @@ export default function BlogDetails() {
             <HeaderBlogDetails />
 
             <div>
-                <div className='max-w-7xl mx-auto px-4 md:px-12 py-10 flex flex-wrap md:flex-nowrap justify-center md:justify-between gap-6'>
+                <div className='max-w-7xl mx-auto px-4 md:px-12 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-6'>
                     {/* LEFT CONTENT */}
-                    <div className='w-full md:w-[67%] flex flex-col items-center md:items-start'>
+                    <div className='w-full lg:w-[67%] flex flex-col items-center md:items-start'>
                         <div>
                             <img src={smiling} alt="" />
                         </div>
@@ -90,7 +90,7 @@ export default function BlogDetails() {
                     </div>
 
                     {/* RIGHT SIDEBAR */}
-                    <div className='w-full md:w-[27%] flex flex-col gap-8 items-center md:items-start'>
+                    <div className='w-full md:w-[70%] lg:w-[27%] flex flex-col gap-8 items-center md:items-start'>
                         {/* SEARCH BAR */}
                         <div className='relative w-full'>
                             <input

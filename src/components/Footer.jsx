@@ -17,14 +17,14 @@ export default function Footer() {
         className="bg-cover bg-center h-full w-full bg-[#002768]"
         style={{ backgroundImage: `url(${footerbg})` }}
       >
-        <div className="max-w-7xl mx-auto px-4 md:px-14 py-10 flex-wrap lg:flex-nowrap gap-4 lg:gap-0 flex justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-14 py-10  flex-wrap lg:flex-nowrap gap-4 lg:gap-0 flex md:justify-between">
           
           {/* Logo Section */}
           <div className="flex flex-col gap-6 lg:w-[24%]">
             <div>
             <img src={logo} alt="Logo" />
             </div>
-            <p className="text-white w-[75%] md:w-[50%] lg:w-[75%]">
+            <p className="text-white w-[75%] md:w-[60%] lg:w-[75%]">
               Open doors to international opportunities and grow your career without borders.
             </p>
             <div className="flex gap-4">
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:w-[17%]">
+          <div className="md:w-[25%] lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Quick Links</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               <li onClick={() => setActiveLink('About Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
@@ -66,7 +66,7 @@ export default function Footer() {
           </div>
 
           {/* Our Services */}
-          <div className="lg:w-[17%]">
+          <div className="md:w-[60%] lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Our Services</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               <li onClick={() => setActiveLink('Work Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="lg:w-[27%]">
+          <div className="md:w-[50%] lg:w-[27%]">
             <h3 className="text-white font-semibold text-[22px]">Subscribe Our Newsletter</h3>
             <p className="text-white w-[90%] mt-2">
               Enter your email address to get latest updates and offers from us.
