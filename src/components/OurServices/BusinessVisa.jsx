@@ -72,12 +72,12 @@ export default function BusinessVisa() {
                             style={{ backgroundImage: `url(${sideimg})` }}
                         >
                             {/* Visa Text */}
-                            <p className="absolute top-[67%] left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold">
+                            <p className="absolute top-[67%] md:top-[62%] lg:top-[67%] left-1/2 transform -translate-x-1/2 text-white text-lg font-semibold">
                                 Visa & Immigration
                             </p>
 
                             {/* Call Card */}
-                            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white py-2 px-3 rounded-lg shadow-lg flex gap-3 items-center w-[60%] max-w-[250px]">
+                            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white py-2 px-3 rounded-lg shadow-lg flex gap-3 items-center w-[60%] md:w-[77%] lg:w-[60%] max-w-[250px]">
                                 <div className="bg-[#EF5533] p-1 rounded-full flex items-center justify-center -ml-8">
                                     <img src={phone} alt="Call" />
                                 </div>
