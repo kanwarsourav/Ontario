@@ -58,12 +58,12 @@ export default function WhyChooseUs() {
                         </div>
 
                         {/* Star Rating */}
-                        <div className="flex gap-1">
-                            <img src={star} alt="star" className="w-5 h-5" />
-                            <img src={star} alt="star" className="w-5 h-5" />
-                            <img src={star} alt="star" className="w-5 h-5" />
-                            <img src={star} alt="star" className="w-5 h-5" />
-                            <img src={halfstar} alt="half star" className="w-5 h-5" />
+                        <div className="flex items-center gap-1">
+                            <img src={star} alt="star" className="" />
+                            <img src={star} alt="star" className="" />
+                            <img src={star} alt="star" className="" />
+                            <img src={star} alt="star" className="" />
+                            <img src={halfstar} alt="half star" className="" />
                         </div>
                     </div>
 

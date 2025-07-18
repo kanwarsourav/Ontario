@@ -9,7 +9,7 @@ export default function Banner() {
                 <div class=" bg-cover bg-center h-full w-full   "
                     style={{ backgroundImage: `url(${bannerBg})` }}>
                     <div class="max-w-7xl m-auto px-4 md:px-12 flex flex-wrap md:flex-nowrap pt-6 md:pt-0">
-                        <div class="flex flex-col  justify-center lg:w-[50%]  gap-4">
+                        <div class="flex flex-col  justify-center lg:w-[50%]  gap-4 py-2">
                             <h1 class="text-white text-4xl md:text-5xl font-bold md:w-[80%]">Build Your Global Career with a Work Visa</h1>
                             <p class="text-white md:w-[75%]">Open doors to international opportunities and grow your career without borders. Let us guide your journey to a successful work visa.</p>
                             <div class="flex">
