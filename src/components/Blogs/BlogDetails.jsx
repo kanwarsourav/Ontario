@@ -8,6 +8,7 @@ import thumbsup from '../../assets/images/thumbsup.svg';
 import meeting from '../../assets/images/meeting.svg';
 import searchIcon from '../../assets/images/searchicon.svg';
 import doe from '../../assets/images/doe.svg';
+import recentpost from '../../assets/images/recentpost.svg';
 
 export default function BlogDetails() {
     return (
@@ -178,7 +179,7 @@ export default function BlogDetails() {
                                 {/* Post 1 */}
                                 <div className="flex gap-3 items-start border-b pb-3">
                                     <img
-                                        src="https://via.placeholder.com/80x60" // Replace with actual thumbnail
+                                        src={recentpost} // Replace with actual thumbnail
                                         alt="Post Thumbnail"
                                         className="w-20 h-16 object-cover rounded-md"
                                     />
@@ -193,7 +194,7 @@ export default function BlogDetails() {
                                 {/* Post 2 */}
                                 <div className="flex gap-3 items-start border-b pb-3">
                                     <img
-                                        src="https://via.placeholder.com/80x60"
+                                        src={recentpost}
                                         alt="Post Thumbnail"
                                         className="w-20 h-16 object-cover rounded-md"
                                     />
@@ -208,7 +209,7 @@ export default function BlogDetails() {
                                 {/* Post 3 */}
                                 <div className="flex gap-3 items-start pb-3">
                                     <img
-                                        src="https://via.placeholder.com/80x60"
+                                        src={recentpost}
                                         alt="Post Thumbnail"
                                         className="w-20 h-16 object-cover rounded-md"
                                     />
