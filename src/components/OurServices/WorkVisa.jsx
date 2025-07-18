@@ -52,16 +52,16 @@ export default function WorkVisa() {
                     {/* Sidebar */}
                     <div className='w-full  lg:w-[27%] flex flex-col   gap-4 items-center lg:items-start text-center md:text-left'>
                         <div className='flex flex-col gap-3 w-full md:w-[70%] lg:w-full'>
-                            <h5 className='flex gap-2 items-center bg-[#EF5533] py-1 px-4 rounded-lg text-white shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center bg-[#EF5533] py-1 px-4 rounded-lg text-white shadow-lg justify-center lg:justify-start'>
                                 <img src={work} alt="" />Work Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center lg:justify-start'>
                                 <img src={tourist} alt="" />Tourist Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center py-1 px-4 rounded-lg text-[#002768] shadow-lg justify-center lg:justify-start'>
                                 <img src={visastudent} alt="" />Student Visa Processing
                             </h5>
-                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg  text-[#002768] shadow-lg justify-center md:justify-start'>
+                            <h5 className='flex gap-2 items-center  py-1 px-4 rounded-lg  text-[#002768] shadow-lg justify-center lg:justify-start'>
                                 <img src={businessvisa} alt="" />Business Visa Processing
                             </h5>
                         </div>
