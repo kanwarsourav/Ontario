@@ -92,7 +92,7 @@ export default function TouristVisa() {
                     {/* Content Area */}
                     <div className='w-full lg:w-[67%] flex flex-col items-center md:items-start text-center md:text-left'>
                         <div>
-                            <h2 className='font-bold text-[30px] md:text-[42px] text-[#002768]'>Business Visa Processing</h2>
+                            <h2 className='font-bold text-[30px] md:text-[42px] text-[#002768]'>Tourist Visa Processing</h2>
                             <p className='text-[#002768] text-sm w-full md:w-[80%] mb-2'>
                                 We guide our clients through difficult issues, bringing insight and judgment to each situation. Our
                                 innovat ive approaches create original solutions to our clients' most complex domestic & multi
