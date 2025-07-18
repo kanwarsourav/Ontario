@@ -121,7 +121,7 @@ export default function BlogDetails() {
                                 </div>
                                 <textarea
                                     placeholder="Comments*"
-                                    className="w-full px-4 py-2 border border-[#0066FF] rounded-lg h-28 focus:outline-none"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg h-28 focus:outline-none"
                                 />
                                 <button
                                     type="submit"
