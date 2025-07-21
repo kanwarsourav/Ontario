@@ -82,7 +82,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between md:justify-center gap-8 lg:gap-0 lg:justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-3 flex justify-between  gap-8 lg:gap-0  items-center">
 
         <Link to="/" className="cursor-pointer">
           <img src={logo} alt="Logo" />
