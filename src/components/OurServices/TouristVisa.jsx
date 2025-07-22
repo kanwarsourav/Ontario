@@ -41,7 +41,7 @@ export default function TouristVisa() {
                 className='bg-cover bg-center h-40 w-full bg-[#002768] flex flex-col justify-center items-center text-center'
                 style={{ backgroundImage: `url(${aboutusbg})` }}
             >
-                <h2 className='font-bold text-4xl md:text-5xl text-white'>Tourist visa Processing</h2>
+                <h2 className='font-bold text-4xl md:text-5xl text-white'>Tourist Visa Processing</h2>
                 <h5 className='font-bold text-sm text-white'>HOME | Tourist Visa Processing</h5>
             </div>
 

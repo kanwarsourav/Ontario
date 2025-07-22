@@ -24,10 +24,11 @@ function App() {
   return (
     <>
 
-      <BrowserRouter>
+      <BrowserRouter basename='/ontario'>
       <ScrollToTop/>
         <Header />
         <Navbar />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs/>} />

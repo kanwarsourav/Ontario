@@ -18,11 +18,13 @@ export default function Footer() {
         style={{ backgroundImage: `url(${footerbg})` }}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-14 py-10  flex-wrap lg:flex-nowrap gap-4 lg:gap-0 flex md:justify-between">
-          
+
           {/* Logo Section */}
           <div className="flex flex-col gap-6 lg:w-[24%]">
             <div>
-            <img src={logo} alt="Logo" />
+              <Link to="/" className="cursor-pointer">
+                <img src={logo} alt="Logo" />
+              </Link>
             </div>
             <p className="text-white w-[75%] md:w-[60%] lg:w-[75%]">
               Open doors to international opportunities and grow your career without borders.
@@ -45,7 +47,7 @@ export default function Footer() {
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('About Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
-              
+
               <li onClick={() => setActiveLink('Blogs')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
@@ -61,7 +63,7 @@ export default function Footer() {
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Contact Us') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>
-              
+
             </ul>
           </div>
 
@@ -72,7 +74,7 @@ export default function Footer() {
               <li onClick={() => setActiveLink('Work Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
                 <img src={orangeaeroplane} alt="" />
                 <span className="relative group">
-                 <Link to="/workvisa" className="cursor-pointer">Work Visa</Link> 
+                  <Link to="/workvisa" className="cursor-pointer">Work Visa</Link>
                   <span className={`absolute left-0 -bottom-0.5 h-[2px] bg-white transition-all duration-300 ${isActive('Work Visa') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
                 </span>
               </li>

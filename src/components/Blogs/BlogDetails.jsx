@@ -81,11 +81,11 @@ export default function BlogDetails() {
                         <div className='flex gap-2 pt-5 text-[#002768] flex-wrap justify-center md:justify-start'>
                             <h5>Share</h5>
                             <span>:</span>
-                            <h5 className='border px-2 rounded-xl'>Facebook</h5>
-                            <h5 className='border px-2 rounded-xl'>Twitter</h5>
-                            <h5 className='border px-2 rounded-xl'>Pinterest</h5>
-                            <h5 className='border px-2 rounded-xl'>Instagram</h5>
-                            <h5 className='border px-2 rounded-xl'>Linkedin</h5>
+                            <h5 className='border px-2 rounded-xl hover:text-white hover:bg-[#002768] cursor-pointer'>Facebook</h5>
+                            <h5 className='border px-2 rounded-xl hover:text-white hover:bg-[#002768] cursor-pointer'>Twitter</h5>
+                            <h5 className='border px-2 rounded-xl hover:text-white hover:bg-[#002768] cursor-pointer'>Pinterest</h5>
+                            <h5 className='border px-2 rounded-xl hover:text-white hover:bg-[#002768] cursor-pointer'>Instagram</h5>
+                            <h5 className='border px-2 rounded-xl hover:text-white hover:bg-[#002768] cursor-pointer'>Linkedin</h5>
                         </div>
                     </div>
 

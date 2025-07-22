@@ -41,7 +41,7 @@ export default function WorkVisa() {
                 className='bg-cover bg-center h-40 w-full bg-[#002768] flex flex-col justify-center items-center text-center'
                 style={{ backgroundImage: `url(${aboutusbg})` }}
             >
-                <h2 className='font-bold text-4xl md:text-5xl text-white'>Work visa Processing</h2>
+                <h2 className='font-bold text-4xl md:text-5xl text-white'>Work Visa Processing</h2>
                 <h5 className='font-bold text-sm text-white'>HOME | Work Visa Processing</h5>
             </div>
 

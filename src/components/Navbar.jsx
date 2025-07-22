@@ -112,10 +112,10 @@ export default function Navbar() {
             </div>
             {openDropdown === "visas" && (
               <ul className="absolute top-full left-0 w-48 bg-white border shadow-md rounded-md py-2 z-50">
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/touristvisa" className="cursor-pointer">Tourist Visa</Link></li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/studentvisa" className="cursor-pointer">Student Visa</Link></li>
-                <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><Link to="/businessvisa" className="cursor-pointer">Business Visa</Link></li>
+                <Link to="/workvisa" className="cursor-pointer"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"> Work Visa</li></Link>
+                <Link to="/touristvisa" className="cursor-pointer"> <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"> Tourist Visa</li></Link>
+                <Link to="/studentvisa" className="cursor-pointer"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"> Student Visa</li></Link>
+                <Link to="/businessvisa" className="cursor-pointer"><li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"> Business Visa</li></Link>
               </ul>
             )}
           </li>
@@ -130,9 +130,9 @@ export default function Navbar() {
 
           <li className="cursor-pointer">
             <Link to="/contactus" className="cursor-pointer">
-            Contact Us
+              Contact Us
             </Link>
-            </li>
+          </li>
         </ul>
 
         <div className="hidden lg:flex items-center gap-2 text-[#002768]">
@@ -172,21 +172,21 @@ export default function Navbar() {
             </li>
             {mobileDropdown === "visas" && (
               <ul className="ml-4 text-sm">
-                <li onClick={handleHamburgerClick}><Link to="/workvisa" className="cursor-pointer">Work Visa</Link></li>
-                <li onClick={handleHamburgerClick}><Link to="/touristvisa" className="cursor-pointer">Tourist Visa</Link></li>
-                <li onClick={handleHamburgerClick}><Link to="/studentvisa" className="cursor-pointer">Student Visa</Link></li>
-                <li onClick={handleHamburgerClick}><Link to="/businessvisa" className="cursor-pointer">Business Visa</Link></li>
+                <Link to="/workvisa" className="cursor-pointer"><li onClick={handleHamburgerClick}>Work Visa</li></Link>
+                <Link to="/touristvisa" className="cursor-pointer"><li onClick={handleHamburgerClick}>Tourist Visa</li></Link>
+                <Link to="/studentvisa" className="cursor-pointer"><li onClick={handleHamburgerClick}>Student Visa</li></Link>
+                <Link to="/businessvisa" className="cursor-pointer"><li onClick={handleHamburgerClick}>Business Visa</li></Link>
               </ul>
             )}
 
             <li onClick={() => toggleMobileDropdown("resources")} className="flex items-center gap-2">
               <Link to="/blogs" onClick={handleHamburgerClick} className="cursor-pointer">Blogs</Link>
-              
+
             </li>
-            
+
 
             <li>
-              <Link to="/contactus" onClick={handleHamburgerClick} className="cursor-pointer">Contact Us
+              <Link to="/ontario/contactus" onClick={handleHamburgerClick} className="cursor-pointer">Contact Us
               </Link></li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">
