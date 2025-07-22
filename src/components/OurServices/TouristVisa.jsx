@@ -47,7 +47,7 @@ export default function TouristVisa() {
 
             {/* Main Section */}
             <div>
-                <div className='max-w-7xl px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
+                <div className='max-w-7xl mx-auto px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
 
                     {/* Sidebar */}
                     <div className='w-full  lg:w-[27%] flex flex-col   gap-4 items-center lg:items-start text-center md:text-left'>

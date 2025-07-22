@@ -41,13 +41,13 @@ export default function StudentVisa() {
                 className='bg-cover bg-center h-40 w-full bg-[#002768] flex flex-col justify-center items-center text-center'
                 style={{ backgroundImage: `url(${aboutusbg})` }}
             >
-                <h2 className='font-bold text-4xl md:text-5xl text-white'>Student Visa Processing</h2>
+                <h2 className='font-bold text-4xl md:text-5xl text-white'>Student visa Processing</h2>
                 <h5 className='font-bold text-sm text-white'>HOME | Student Visa Processing</h5>
             </div>
 
             {/* Main Section */}
             <div>
-                <div className='max-w-7xl px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
+                <div className='max-w-7xl mx-auto px-4 md:px-14 py-10 flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center md:items-start gap-6'>
 
                     {/* Sidebar */}
                     <div className='w-full  lg:w-[27%] flex flex-col   gap-4 items-center lg:items-start text-center md:text-left'>
