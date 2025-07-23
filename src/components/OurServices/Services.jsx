@@ -23,6 +23,7 @@ export default function Services() {
             <div className="flex flex-wrap justify-center gap-6">
                 {/* Card 1 */}
                 <div className="w-full sm:w-[47%] lg:w-[23%] bg-white rounded-xl shadow-md overflow-hidden flex flex-col duration-300 hover:scale-105 transition-transform">
+                    <Link to="/workvisa" >
                     <div className='p-2'>
                         <img src={workingvisa} alt="Working Visa" />
                     </div>
@@ -38,16 +39,18 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0  ">
-                        <Link to="/workvisa" >
+                        
                         <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
                            Read More
                         </button>
-                        </Link>
+                        
                     </div>
+                    </Link>
                 </div>
 
                 {/* Card 2 */}
                 <div className="w-full sm:w-[47%] lg:w-[23%] bg-white rounded-xl shadow-md overflow-hidden flex flex-col duration-300 hover:scale-105 transition-transform">
+                    <Link to="/touristvisa" >
                     <div className='p-2'>
                         <img src={touristsvisa} alt="Tourists Visa" />
                     </div>
@@ -63,16 +66,18 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                       <Link to="/touristvisa" >
+                       
                         <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
                            Read More
                         </button>
-                        </Link>
+                        
                     </div>
+                    </Link>
                 </div>
 
                 {/* Card 3 */}
                 <div className="w-full sm:w-[47%] lg:w-[23%] bg-white rounded-xl shadow-md overflow-hidden flex flex-col duration-300 hover:scale-105 transition-transform">
+                    <Link to="/studentvisa" >
                     <div className='p-2'>
                         <img src={studentvisa} alt="Student Visa" />
                     </div>
@@ -88,16 +93,18 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                       <Link to="/studentvisa" >
+                       
                         <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
                            Read More
                         </button>
-                        </Link>
+                        
                     </div>
+                    </Link>
                 </div>
 
                 {/* Card 4 */}
                 <div className="w-full sm:w-[47%] lg:w-[23%] bg-white rounded-xl shadow-md overflow-hidden flex flex-col duration-300 hover:scale-105 transition-transform">
+                    <Link to="/businessvisa" >
                     <div className='p-2'>
                         <img src={workingvisa} alt="Business Visa" />
                     </div>
@@ -113,12 +120,13 @@ export default function Services() {
                         </div>
                     </div>
                     <div className="p-4 pt-0">
-                        <Link to="/businessvisa" >
+                        
                         <button className="w-full bg-[#EF5533] text-white rounded-full py-2 text-sm font-semibold cursor-pointer">
                            Read More
                         </button>
-                        </Link>
+                        
                     </div>
+                    </Link>
                 </div>
             </div>
         </div>

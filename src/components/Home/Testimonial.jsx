@@ -44,7 +44,7 @@ export default function TestimonialCarousel() {
     arrows: false,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 767, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -73,7 +73,7 @@ export default function TestimonialCarousel() {
           </button>
 
           {/* Slider */}
-          <div className="w-full ">
+          <div className="w-full  ">
             <Slider ref={sliderRef} {...settings}>
               {testimonials.map((t, idx) => (
                 <div key={idx} className="px-3 my-6">

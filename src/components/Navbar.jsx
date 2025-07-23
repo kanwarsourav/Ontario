@@ -186,7 +186,7 @@ export default function Navbar() {
 
 
             <li>
-              <Link to="/ontario/contactus" onClick={handleHamburgerClick} className="cursor-pointer">Contact Us
+              <Link to="/contactus" onClick={handleHamburgerClick} className="cursor-pointer">Contact Us
               </Link></li>
 
             <li className="flex items-center gap-2 pt-2 border-t mt-2">

@@ -24,7 +24,7 @@ function App() {
   return (
     <>
 
-      <BrowserRouter basename='/ontario'>
+      <BrowserRouter >
       <ScrollToTop/>
         <Header />
         <Navbar />

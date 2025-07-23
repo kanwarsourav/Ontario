@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="md:w-[25%] lg:w-[17%]">
+          <div className="w-[50%] md:w-[25%] lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Quick Links</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               <li onClick={() => setActiveLink('About Us')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
 
           {/* Our Services */}
-          <div className="md:w-[60%] lg:w-[17%]">
+          <div className=" md:w-[25%] lg:w-[17%]">
             <h3 className="text-white font-semibold text-[22px]">Our Services</h3>
             <ul className="flex flex-col gap-2 mt-2 md:mt-4">
               <li onClick={() => setActiveLink('Work Visa')} className="text-white flex gap-1 items-center text-[18px] cursor-pointer">
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="md:w-[50%] lg:w-[27%]">
+          <div className="md:w-[30%] lg:w-[27%]">
             <h3 className="text-white font-semibold text-[22px]">Subscribe Our Newsletter</h3>
             <p className="text-white w-[90%] mt-2">
               Enter your email address to get latest updates and offers from us.

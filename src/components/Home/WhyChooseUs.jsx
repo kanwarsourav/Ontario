@@ -71,7 +71,7 @@ export default function WhyChooseUs() {
                     <img
                         src={girl}
                         alt="girl"
-                        className="absolute bottom-[-2px] sm:bottom-[-4px] right-[-30px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[180px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
+                        className="absolute bottom-[-2px] sm:bottom-[-4px] right-[-15px] sm:right-[-10px] md:right-[-100px] lg:right-[-40px] w-[180px]  sm:w-[250px] md:w-[250px] lg:w-[250px] z-10"
                     />
                 </div>
 
